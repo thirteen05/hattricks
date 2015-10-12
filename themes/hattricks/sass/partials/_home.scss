@@ -1,0 +1,106 @@
+#Stage{
+  overflow: hidden;
+  
+  .food-animation-text p{
+    font-size: 60px;
+    font-family: 'Bevan', Times New Roman, serif!important;
+    text-transform: uppercase;
+  }
+  
+}
+
+#section-home-top{
+  
+  #home-jumbo-content-wrapper{
+    display: none;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translateY(-50%) translateX(-50%);
+    -ms-transform: translateY(-50%) translateX(-50%);
+    transform: translateY(-50%) translateX(-50%);
+    min-width: 300px;
+  }
+  
+  .jumbotron{
+    background-image: url(img/test-bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100vh;
+    
+    #begin-powerplay-wrapper:hover{
+      cursor: pointer;
+    }
+
+    #hattricks-logo{
+      display: inline-block;
+    }
+  }
+}
+
+#section-home-history{
+  
+  .jumbotron{
+    background-image: url(img/test-bg-2.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100vh;
+    
+  }
+  
+  #home-timeline-link h2{
+    transition: all .2s ease-out;
+    transform-origin: left;
+    
+    &:hover{
+      -ms-transform: scale(1.1,1.1); /* IE 9 */
+      -webkit-transform: scale(1.1,1.1); /* Safari */
+      transform: scale(1.1,1.1);
+    }
+  }
+}
+
+#section-home-food{
+  
+  .jumbotron{
+    background-image: url(img/test-bg-3.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100vh;
+    padding-top: 0px;
+    
+    .row:first-of-type{
+      min-height: 70vh;
+    }
+    
+    .row:nth-of-type(2){
+      min-height: 25vh;
+      background-color: rgba(8,96,43,0.7);
+      padding: 20px 15px;
+      transform: rotateX();
+    }
+  }
+}
+
+#section-home-drinks{
+  
+  .jumbotron{
+    background-image: url(img/test-bg-4.jpg);
+    background-size: cover;
+    min-height: 100vh;
+    padding-top: 0px;
+    
+  }
+}
+
+#section-home-thunder{
+  
+  .jumbotron{
+    background-image: url(img/test-bg-5.jpg);
+    background-size: cover;
+    min-height: 100vh;
+    padding-top: 0px;
+    
+  }
+}
+
