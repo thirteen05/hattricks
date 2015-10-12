@@ -9,6 +9,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
       
         <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri();?>/bower_components/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri();?>/bower_components/jquery-selectric/public/themes/modern/selectric.css">
         <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri();?>/css/bootstrap.min.css">
         <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri();?>/css/main.css">
         <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri();?>/js/vertical-timeline/css/style.css"> <!-- Resource style -->

@@ -11,9 +11,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-wc_print_notices();
-
 do_action( 'woocommerce_before_checkout_form', $checkout );
+
 
 // If checkout registration is disabled and not logged in, the user cannot checkout
 if ( ! $checkout->enable_signup && ! $checkout->enable_guest_checkout && ! is_user_logged_in() ) {
@@ -29,20 +28,21 @@ $get_checkout_url = apply_filters( 'woocommerce_get_checkout_url', WC()->cart->g
 	<?php if ( sizeof( $checkout->checkout_fields ) > 0 ) : ?>
 
 		<?php do_action( 'woocommerce_checkout_before_customer_details' ); ?>
+        <div class="row">
+          <div id="customer_details">
+              <div class="col-md-6">
+                  <?php do_action( 'woocommerce_checkout_billing' ); ?>
+              </div>
 
-		<div class="col2-set" id="customer_details">
-			<div class="col-1">
-				<?php do_action( 'woocommerce_checkout_billing' ); ?>
-			</div>
-
-			<div class="col-2">
-				<?php do_action( 'woocommerce_checkout_shipping' ); ?>
-			</div>
-		</div>
+              <div class="col-md-6">
+                  <?php do_action( 'woocommerce_checkout_shipping' ); ?>
+              </div>
+          </div>
+        </div>
 
 		<?php do_action( 'woocommerce_checkout_after_customer_details' ); ?>
 
-		<h3 id="order_review_heading"><?php _e( 'Your order', 'woocommerce' ); ?></h3>
+		<h3 id="order_review_heading" class="font-bevan font-yellow"><?php _e( 'Your order', 'woocommerce' ); ?></h3>
 
 	<?php endif; ?>
 
@@ -55,5 +55,7 @@ $get_checkout_url = apply_filters( 'woocommerce_get_checkout_url', WC()->cart->g
 	<?php do_action( 'woocommerce_checkout_after_order_review' ); ?>
 
 </form>
+
+<?php //wc_print_notices(); ?>
 
 <?php do_action( 'woocommerce_after_checkout_form', $checkout ); ?>

@@ -10,8 +10,11 @@
         <script src="<?php echo get_stylesheet_directory_uri();?>/js/thirteen05.js"></script>
         <script src="<?php echo get_stylesheet_directory_uri();?>/bower_components/jquery.scrollTo/jquery.scrollTo.min.js"></script>
         <script src="<?php echo get_stylesheet_directory_uri();?>/bower_components/jquery.stellar/src/jquery.stellar.js"></script>
+        <script src="<?php echo get_stylesheet_directory_uri();?>/bower_components/jquery-selectric/public/jquery.selectric.min.js"></script>
       
         <script>
+          
+          //Fade in site when loaded
           
           $(window).load(function(){
             $('body').addClass('show');
@@ -19,15 +22,30 @@
             
           });
           
+          //Fade Navbar on scroll down
+          
           thirteen05.navbarFade('#hattricks-navbar','navbar-green');
+          
+          
+          //Sets anchosr for home page
           
           $(document).ready(function(){
             thirteen05.setAnchors(); 
           });
           
-          $.stellar();
+          //Initiates Stellar.js parallax plug-in
           
-
+          $.stellar();
+/*          
+          $(function(){
+            $('select').selectric();
+          });*/
+          
+          //Shows Shipping Address form if Ship to Different Address is checked
+          
+          $('#ship-to-different-address-checkbox').change(function(){
+                $('.shipping_address').stop().slideToggle();
+          });
           
         </script>
       

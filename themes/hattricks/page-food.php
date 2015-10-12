@@ -1,5 +1,7 @@
 <?php get_header(); ?>
 
+
+
 <?php get_template_part('sections/woo/section-woo-shop-jumbo'); ?>
 
 <div class="container">
@@ -21,9 +23,10 @@
       </ul>
     </div>
     <div class="col-md-8">
-    
     </div>
   </div>
 </div>
+
+
 
 <?php get_footer(); ?>

@@ -15,6 +15,7 @@
   "dependencies": {
     "font-awesome": "~4.4.0",
     "fullpage.js": "~2.7.1",
+    "jquery-selectric": "~1.9.3",
     "jquery.scrollTo": "~2.1.1",
     "jquery.stellar": "stellar.js#~0.6.2",
     "vivus": "~0.2.2"

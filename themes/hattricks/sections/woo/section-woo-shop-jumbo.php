@@ -3,7 +3,8 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12 text-center">
-          <h1 class="font-bevan font-white">Hattricks Swag</h1>
+          <img width="150" src="<?php echo get_stylesheet_directory_uri();?>/img/Hattricks-Shamrock-Icon.svg"/>
+          <h1 class="font-bevan font-white text-shadow no-margin">Hattricks Merch</h1>
         </div>
       </div>
     </div>

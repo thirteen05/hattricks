@@ -1,15 +1,131 @@
 #section-woo-shop-jumbo{
   
   .jumbotron{
-    background-image: url(img/test-bg.jpg);
+    background-image: url(img/Brick-Background-Hattricks.jpg);
     
     
   }
 }
 
 #woo-shop-wrapper{
-
+  padding-top: 15px;
+  background-color: #02180b;
+  border-top: 10px double $green-glass;
+  
+  .woocommerce-breadcrumb{
+    font-size: 18px;
+    font-family: $bevan;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+  }
+  
+  .woocommerce-ordering{
+    max-width: 300px;
+  }
+  
+  .page-title{
+    color: #FFF;
+  }
+  
+  .product .price{
+    font-size: 24px;
+  }
+  
+  .product .single_add_to_cart_button{
+    margin-top: 15px;
+  }
 }
+
+ul.products{
+  list-style-type: none;
+  padding-left: 0px;
+  padding-top: 30px;
+  
+  .product h3{
+    font-family: $bevan;
+    text-transform: uppercase;
+    font-size: 2rem;
+  }
+}
+
+.woocommerce{ 
+  background-color: #02180b;
+  padding-bottom: 60px; 
+  
+  .table{
+    margin-top: 30px;
+    background-color: $green-glass;
+    border-color: $green-solid;
+    
+    td{
+      border-color: $green-solid;
+      font-size: 2rem;
+      color: #FFF;
+      
+      &.product-remove{
+        font-size: 1.5rem;
+      }
+    }
+    
+    tbody{
+      border-color: $green-solid;
+    }
+  
+      th{
+        font-family: $bevan;
+        color: $yellow;
+        text-transform: uppercase;
+        border: 1px solid $green-glass;
+        text-align: center;
+        vertical-align: middle;
+        font-weight: normal;
+      }
+
+  }
+  
+  .woocommerce-message, .woocommerce-error, .woocommerce-info{
+    font-size: 2rem!important;
+    color: #FFF;
+  }
+}
+
+.woocommerce-tabs{
+  
+  .tabs{
+    display: none;
+  }
+  
+  .panel{
+  background-color: $green-glass;
+  padding: 15px;
+  border-radius: 0px;
+  
+    p{
+      color: #FFF;
+    }
+  } 
+}
+
+.form-control-ht{
+  background-color: $green-glass;
+  border-radius: 0px;
+  color: #FFF;
+  border-color: green;
+}
+
+#ship-to-different-address{
+  font-weight: normal;
+}
+
+div.shipping_address{
+  display: none;
+}
+
+#woocommerce-cart-empty-wrapper{
+  padding-top: 60px;
+}
+
+
 
 /* Extra small devices (phones, less than 768px) */
 /* No media query since this is the default in Bootstrap */
@@ -18,16 +134,21 @@
 @media (min-width: 768px) {  }
 
 /* Medium devices (desktops, 992px and up) */
-@media (min-width: 992px) {  }
+@media (min-width: 992px) {
+  
+}
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
   #section-woo-shop-jumbo{
 
     .jumbotron{
-      background-image: url(img/test-bg.jpg);
-      min-height: 50vh;
+      min-height: 25vh;
 
     }
+  }
+  
+  .woocommerce .table th{
+    font-size: 2rem;
   }
 }
