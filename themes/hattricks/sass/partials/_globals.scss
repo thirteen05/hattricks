@@ -1,6 +1,7 @@
 $yellow: #f6ee3d;
 $green-glass: rgba(8, 96, 43, 0.7);
 $green-solid: rgba(8, 96, 43, 1.0);
+$dark-green: #02180b;
 
 html{
   background-color: #02180b;
@@ -17,6 +18,10 @@ body{
 
 .no-margin{
   margin: 0px!important;
+}
+
+.no-padding{
+  padding: 0px!important;
 }
 
 .hidden{

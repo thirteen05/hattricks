@@ -1,0 +1,238 @@
+@import "https://fonts.googleapis.com/css?family=Bevan";
+@import "https://fonts.googleapis.com/css?family=Montserrat";
+/* line 4, ../sass/partials/_fonts.scss */
+.font-white {
+  color: #FFF !important; }
+
+/* line 8, ../sass/partials/_fonts.scss */
+.font-yellow {
+  color: #f6ee3d; }
+
+/* line 12, ../sass/partials/_fonts.scss */
+.font-bevan {
+  font-family: "Bevan", Times New Roman, serif !important;
+  text-transform: uppercase; }
+
+/* line 1, ../sass/partials/_globals.scss */
+body {
+  opacity: 0;
+  -webkit-transition: opacity .5s;
+  transition: opacity .5s;
+  background-color: #02180b; }
+
+/* line 8, ../sass/partials/_globals.scss */
+.no-margin {
+  margin: 0px !important; }
+
+/* line 12, ../sass/partials/_globals.scss */
+.hidden {
+  opacity: 0; }
+
+/* line 16, ../sass/partials/_globals.scss */
+.show {
+  opacity: 1; }
+
+/* line 20, ../sass/partials/_globals.scss */
+p {
+  font-family: 'Montserrat', Helvetica, Arial, sans-serif; }
+
+/* line 1, ../sass/partials/_navbar.scss */
+#hattricks-navbar {
+  background-image: none;
+  box-shadow: none;
+  background-color: rgba(8, 96, 43, 0);
+  width: 100%;
+  border: none;
+  margin-bottom: 0px;
+  border-top: 0px;
+  -webkit-transition: background-color .3s;
+  -webkit-transition: background-color .3s;
+  transition: background-color .3s; }
+  /* line 13, ../sass/partials/_navbar.scss */
+  #hattricks-navbar #navbar {
+    text-align: center; }
+  /* line 17, ../sass/partials/_navbar.scss */
+  #hattricks-navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+    vertical-align: top; }
+    /* line 22, ../sass/partials/_navbar.scss */
+    #hattricks-navbar .navbar-nav .open > a,
+    #hattricks-navbar .navbar-nav .active > a {
+      background-image: none;
+      color: white;
+      background-color: green; }
+    /* line 29, ../sass/partials/_navbar.scss */
+    #hattricks-navbar .navbar-nav li a {
+      font-family: 'Bevan', Times New Roman, serif;
+      font-size: 28px;
+      text-transform: uppercase;
+      color: #b7b7b7;
+      -webkit-transition: color .5s;
+      transition: color .5s; }
+      /* line 37, ../sass/partials/_navbar.scss */
+      #hattricks-navbar .navbar-nav li a:hover {
+        color: #fff; }
+  /* line 43, ../sass/partials/_navbar.scss */
+  #hattricks-navbar.navbar-green {
+    background-color: rgba(8, 96, 43, 0.7) !important; }
+
+/* line 48, ../sass/partials/_navbar.scss */
+#scroll-to-top {
+  width: 50px;
+  height: 50px;
+  background-color: rgba(8, 96, 43, 0.7);
+  line-height: 50px;
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  display: none; }
+
+/* line 59, ../sass/partials/_navbar.scss */
+#scroll-to-top:hover {
+  cursor: pointer;
+  background-color: rgba(8, 96, 43, 0.9); }
+
+/* line 1, ../sass/partials/_trigger.scss */
+#trigger-wrapper {
+  text-align: center; }
+  /* line 4, ../sass/partials/_trigger.scss */
+  #trigger-wrapper .custom-trigger-list {
+    list-style-type: none;
+    padding-left: 0px;
+    position: fixed;
+    left: 15px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%); }
+    /* line 14, ../sass/partials/_trigger.scss */
+    #trigger-wrapper .custom-trigger-list .custom-trigger {
+      height: 30px;
+      width: 30px;
+      border: 1px solid white;
+      margin-top: 10px;
+      border-radius: 100%;
+      -webkit-transition: all .3s;
+      transition: all .3s;
+      opacity: 0.7; }
+      /* line 24, ../sass/partials/_trigger.scss */
+      #trigger-wrapper .custom-trigger-list .custom-trigger a {
+        height: 100%;
+        width: 100%; }
+        /* line 28, ../sass/partials/_trigger.scss */
+        #trigger-wrapper .custom-trigger-list .custom-trigger a:hover, #trigger-wrapper .custom-trigger-list .custom-trigger a:active, #trigger-wrapper .custom-trigger-list .custom-trigger a:focus {
+          background-color: transparent; }
+      /* line 35, ../sass/partials/_trigger.scss */
+      #trigger-wrapper .custom-trigger-list .custom-trigger.active, #trigger-wrapper .custom-trigger-list .custom-trigger:hover {
+        background-color: yellow;
+        border-width: 3px;
+        border-color: yellow; }
+
+/* line 1, ../sass/partials/_jumbotrons.scss */
+.jumbotron {
+  margin-bottom: 0px; }
+
+/* line 5, ../sass/partials/_jumbotrons.scss */
+#jumbotron-1 {
+  background-image: url(../img/test-bg.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 100vh; }
+
+/* line 12, ../sass/partials/_jumbotrons.scss */
+#jumbotron-2 {
+  background-image: url(../img/test-bg-2.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 100vh; }
+
+/* line 19, ../sass/partials/_jumbotrons.scss */
+#jumbotron-3 {
+  background-image: url(../img/test-bg-3.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 100vh;
+  padding-top: 0px; }
+
+/* line 28, ../sass/partials/_jumbotrons.scss */
+#jumbotron-4 {
+  background-image: url(../img/test-bg-4.jpg);
+  background-size: cover;
+  min-height: 100vh;
+  padding-top: 0px; }
+
+/* line 36, ../sass/partials/_jumbotrons.scss */
+#jumbotron-5 {
+  background-image: url(../img/test-bg-5.jpg);
+  background-size: cover;
+  min-height: 100vh;
+  padding-top: 0px; }
+
+/* line 1, ../sass/partials/_home.scss */
+#begin-powerplay-wrapper:hover {
+  cursor: pointer; }
+
+/* line 5, ../sass/partials/_home.scss */
+#home-jumbo-content-wrapper {
+  display: none;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translateY(-50%) translateX(-50%);
+  -ms-transform: translateY(-50%) translateX(-50%);
+  transform: translateY(-50%) translateX(-50%);
+  min-width: 300px; }
+
+/* line 16, ../sass/partials/_home.scss */
+#hattricks-logo {
+  display: inline-block; }
+
+/* line 20, ../sass/partials/_home.scss */
+#jumbotron-3 .row:first-of-type {
+  min-height: 70vh; }
+
+/* line 24, ../sass/partials/_home.scss */
+#jumbotron-3 .row:nth-of-type(2) {
+  min-height: 25vh;
+  background-color: rgba(8, 96, 43, 0.7);
+  padding: 20px 15px;
+  transform: rotateX(); }
+
+/* line 31, ../sass/partials/_home.scss */
+#Stage {
+  overflow: hidden; }
+  /* line 34, ../sass/partials/_home.scss */
+  #Stage .food-animation-text p {
+    font-size: 60px;
+    font-family: "Bevan", Times New Roman, serif !important;
+    text-transform: uppercase; }
+
+/* line 3, ../sass/partials/_timeline.scss */
+.cd-timeline-content h2 {
+  display: inline-block; }
+
+/* line 10, ../sass/partials/_timeline.scss */
+.cd-timeline-img {
+  background-color: green;
+  line-height: 60px;
+  font-size: 36px; }
+  /* line 16, ../sass/partials/_timeline.scss */
+  .cd-timeline-img i {
+    position: relative;
+    right: 2px;
+    top: 3px; }
+
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+/* Small devices (tablets, 768px and up) */
+/* Medium devices (desktops, 992px and up) */
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  /* line 13, ../sass/partials/_media_queries.scss */
+  #jumbotron-3 {
+    background-position: center center; }
+
+  /* line 17, ../sass/partials/_media_queries.scss */
+  .cd-timeline-content .cd-date {
+    font-size: 28px; } }

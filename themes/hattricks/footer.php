@@ -47,6 +47,10 @@
                 $('.shipping_address').stop().slideToggle();
           });
           
+          $('#food-button').click(function(){
+            $('#section-food-pregame').fadeToggle();
+          });
+          
         </script>
       
       

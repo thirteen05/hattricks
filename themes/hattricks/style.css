@@ -27,75 +27,79 @@ Use it to make something cool, have fun, and share what you've learned with othe
   text-transform: uppercase;
   font-weight: normal; }
 
-/* line 5, sass/partials/_globals.scss */
+/* line 6, sass/partials/_globals.scss */
 html {
   background-color: #02180b;
   font-family: 'Montserrat', Helvetica, Arial, sans-serif;
   height: 100vh; }
 
-/* line 11, sass/partials/_globals.scss */
+/* line 12, sass/partials/_globals.scss */
 body {
   opacity: 0;
   -webkit-transition: opacity .5s;
   transition: opacity .5s;
   font-family: 'Montserrat', Helvetica, Arial, sans-serif; }
 
-/* line 18, sass/partials/_globals.scss */
+/* line 19, sass/partials/_globals.scss */
 .no-margin {
   margin: 0px !important; }
 
-/* line 22, sass/partials/_globals.scss */
+/* line 23, sass/partials/_globals.scss */
+.no-padding {
+  padding: 0px !important; }
+
+/* line 27, sass/partials/_globals.scss */
 .hidden {
   opacity: 0; }
 
-/* line 26, sass/partials/_globals.scss */
+/* line 31, sass/partials/_globals.scss */
 .show {
   opacity: 1; }
 
-/* line 30, sass/partials/_globals.scss */
+/* line 35, sass/partials/_globals.scss */
 p,
 .jumbotron p {
   font-family: 'Montserrat', Helvetica, Arial, sans-serif;
   font-size: 14px; }
 
-/* line 36, sass/partials/_globals.scss */
+/* line 41, sass/partials/_globals.scss */
 a {
   color: #f6ee3d; }
-  /* line 39, sass/partials/_globals.scss */
+  /* line 44, sass/partials/_globals.scss */
   a:hover {
     color: green;
     text-decoration: none; }
-  /* line 44, sass/partials/_globals.scss */
+  /* line 49, sass/partials/_globals.scss */
   a:active {
     text-decoration: none; }
-  /* line 48, sass/partials/_globals.scss */
+  /* line 53, sass/partials/_globals.scss */
   a:focus {
     text-decoration: none; }
 
-/* line 53, sass/partials/_globals.scss */
+/* line 58, sass/partials/_globals.scss */
 .text-shadow {
   text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7); }
 
-/* line 57, sass/partials/_globals.scss */
+/* line 62, sass/partials/_globals.scss */
 .outline {
   border: 1px solid black; }
 
-/* line 61, sass/partials/_globals.scss */
+/* line 66, sass/partials/_globals.scss */
 .full-height {
   height: 100vh; }
 
-/* line 65, sass/partials/_globals.scss */
+/* line 70, sass/partials/_globals.scss */
 .padding-top-30 {
   padding-top: 30px !important; }
 
-/* line 69, sass/partials/_globals.scss */
+/* line 74, sass/partials/_globals.scss */
 .btn.btn-primary.btn-hattricks {
   background-color: rgba(8, 96, 43, 0.7);
   border: none;
   border-radius: 0px;
   font-family: 'Montserrat', Helvetica, Arial, sans-serif;
   display: inline-block; }
-  /* line 76, sass/partials/_globals.scss */
+  /* line 81, sass/partials/_globals.scss */
   .btn.btn-primary.btn-hattricks:hover {
     background-color: #08602b; }
 
@@ -171,14 +175,14 @@ a {
     transform: translateY(-50%); }
     /* line 14, sass/partials/_trigger.scss */
     #trigger-wrapper .custom-trigger-list .custom-trigger {
-      height: 30px;
-      width: 30px;
-      border: 1px solid white;
+      height: 10px;
+      width: 10px;
       margin-top: 10px;
       border-radius: 100%;
-      -webkit-transition: all .3s;
-      transition: all .3s;
-      opacity: 0.7; }
+      -webkit-transition: all .3s ease-in;
+      transition: all .2s;
+      opacity: 0.7;
+      background-color: #FFF; }
       /* line 24, sass/partials/_trigger.scss */
       #trigger-wrapper .custom-trigger-list .custom-trigger a {
         height: 100%;
@@ -189,8 +193,9 @@ a {
       /* line 35, sass/partials/_trigger.scss */
       #trigger-wrapper .custom-trigger-list .custom-trigger.active, #trigger-wrapper .custom-trigger-list .custom-trigger:hover {
         background-color: yellow;
-        border-width: 3px;
-        border-color: yellow; }
+        border-color: yellow;
+        width: 20px;
+        height: 20px; }
 
 /* line 1, sass/partials/_home.scss */
 #Stage {
@@ -238,8 +243,7 @@ a {
   #section-home-history #home-timeline-link h2:hover {
     -ms-transform: scale(1.1, 1.1);
     /* IE 9 */
-    -webkit-transform: scale(1.1, 1.1);
-    /* Safari */
+    zoom: 110%;
     transform: scale(1.1, 1.1); }
 
 /* line 65, sass/partials/_home.scss */
@@ -273,6 +277,30 @@ a {
   min-height: 100vh;
   padding-top: 0px; }
 
+/* line 3, sass/partials/_food.scss */
+#section-food-jumbo .jumbotron {
+  background-image: url(img/Brick-Background-Hattricks.jpg);
+  background-position: fixed;
+  background-size: cover;
+  overflow-y: scroll; }
+/* line 10, sass/partials/_food.scss */
+#section-food-jumbo #menu-wrapper {
+  background-color: rgba(8, 96, 43, 0.7); }
+  /* line 16, sass/partials/_food.scss */
+  #section-food-jumbo #menu-wrapper hr {
+    color: green; }
+
+/* Small devices (tablets, 768px and up) */
+/* Medium devices (desktops, 992px and up) */
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  /* line 33, sass/partials/_food.scss */
+  #section-food-jumbo .jumbotron {
+    height: 100vh; }
+
+  /* line 37, sass/partials/_food.scss */
+  #menu-wrapper {
+    min-height: 60vh; } }
 /* line 3, sass/partials/_timeline.scss */
 .cd-timeline-content h2 {
   display: inline-block; }
