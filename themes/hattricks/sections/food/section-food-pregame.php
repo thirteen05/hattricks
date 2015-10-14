@@ -1,8 +1,8 @@
 <section id="section-food-pregame">
   <div class="container-fluid">
     <div class="row">
-      <div class="col-md-12">
-        <h3 class="font-bevan font-yellow text-shadow">Pre-Game (Appetizers)</h3>
+      <div class="col-md-12 text-center">
+        <h3 class="font-bevan font-yellow text-shadow food-menu-section-header">Pre-Game</h3>
         <hr>
       </div>
     </div>

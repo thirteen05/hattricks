@@ -1,10 +1,19 @@
-#section-food-jumbo{
+#food-wrapper{
+  background-image: url(img/Brick-Background-Hattricks.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100%;
+  
+  .menu-price{
+    float: right;
+  }
+  
+  .food-menu-section-header{
+    font-size: 44px;
+  }
   
   .jumbotron{
-    background-image: url(img/Brick-Background-Hattricks.jpg);
-    background-position: fixed;
-    background-size: cover;
-    overflow-y: scroll;
+    background-color: transparent;
   }
   
   #menu-wrapper{
@@ -17,7 +26,42 @@
       color: green;
     }
     
+  }
+  
+  #section-food-pregame{
+    background-color: $green-glass;
+    margin-bottom: 45px;
     
+    p{
+      margin-bottom: 30px;
+    }
+  }
+  
+  #section-food-first{
+    background-color: $green-glass;
+    margin-bottom: 45px;
+    
+    p{
+      margin-bottom: 30px;
+    }
+  }
+  
+  #section-food-second{
+    background-color: $green-glass;
+    margin-bottom: 45px;
+    
+    p{
+      margin-bottom: 30px;
+    }
+  }
+  
+  #section-food-third{
+    background-color: $green-glass;
+    margin-bottom: 45px;
+    
+    p{
+      margin-bottom: 30px;
+    }
   }
 }
 
@@ -32,6 +76,7 @@
 
   #section-food-jumbo .jumbotron{
     height: 100vh;
+    overflow-y: scroll;
   }
   
   #menu-wrapper{

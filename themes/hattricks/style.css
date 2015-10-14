@@ -277,28 +277,66 @@ a {
   min-height: 100vh;
   padding-top: 0px; }
 
-/* line 3, sass/partials/_food.scss */
-#section-food-jumbo .jumbotron {
+/* line 1, sass/partials/_food.scss */
+#food-wrapper {
   background-image: url(img/Brick-Background-Hattricks.jpg);
-  background-position: fixed;
+  background-attachment: fixed;
   background-size: cover;
-  overflow-y: scroll; }
-/* line 10, sass/partials/_food.scss */
-#section-food-jumbo #menu-wrapper {
-  background-color: rgba(8, 96, 43, 0.7); }
-  /* line 16, sass/partials/_food.scss */
-  #section-food-jumbo #menu-wrapper hr {
-    color: green; }
+  height: 100%; }
+  /* line 7, sass/partials/_food.scss */
+  #food-wrapper .menu-price {
+    float: right; }
+  /* line 11, sass/partials/_food.scss */
+  #food-wrapper .food-menu-section-header {
+    font-size: 44px; }
+  /* line 15, sass/partials/_food.scss */
+  #food-wrapper .jumbotron {
+    background-color: transparent; }
+  /* line 19, sass/partials/_food.scss */
+  #food-wrapper #menu-wrapper {
+    background-color: rgba(8, 96, 43, 0.7); }
+    /* line 25, sass/partials/_food.scss */
+    #food-wrapper #menu-wrapper hr {
+      color: green; }
+  /* line 31, sass/partials/_food.scss */
+  #food-wrapper #section-food-pregame {
+    background-color: rgba(8, 96, 43, 0.7);
+    margin-bottom: 45px; }
+    /* line 35, sass/partials/_food.scss */
+    #food-wrapper #section-food-pregame p {
+      margin-bottom: 30px; }
+  /* line 40, sass/partials/_food.scss */
+  #food-wrapper #section-food-first {
+    background-color: rgba(8, 96, 43, 0.7);
+    margin-bottom: 45px; }
+    /* line 44, sass/partials/_food.scss */
+    #food-wrapper #section-food-first p {
+      margin-bottom: 30px; }
+  /* line 49, sass/partials/_food.scss */
+  #food-wrapper #section-food-second {
+    background-color: rgba(8, 96, 43, 0.7);
+    margin-bottom: 45px; }
+    /* line 53, sass/partials/_food.scss */
+    #food-wrapper #section-food-second p {
+      margin-bottom: 30px; }
+  /* line 58, sass/partials/_food.scss */
+  #food-wrapper #section-food-third {
+    background-color: rgba(8, 96, 43, 0.7);
+    margin-bottom: 45px; }
+    /* line 62, sass/partials/_food.scss */
+    #food-wrapper #section-food-third p {
+      margin-bottom: 30px; }
 
 /* Small devices (tablets, 768px and up) */
 /* Medium devices (desktops, 992px and up) */
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-  /* line 33, sass/partials/_food.scss */
+  /* line 77, sass/partials/_food.scss */
   #section-food-jumbo .jumbotron {
-    height: 100vh; }
+    height: 100vh;
+    overflow-y: scroll; }
 
-  /* line 37, sass/partials/_food.scss */
+  /* line 82, sass/partials/_food.scss */
   #menu-wrapper {
     min-height: 60vh; } }
 /* line 3, sass/partials/_timeline.scss */
