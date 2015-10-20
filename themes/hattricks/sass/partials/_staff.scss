@@ -1,0 +1,79 @@
+#staff-wrapper{
+  background-image: url(img/Brick-Background-Hattricks.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  min-height: 100vh;
+  
+    
+  .staff-member-pic-wrapper{
+      position: relative;
+      height: 400px;
+      background-size: cover;
+      overflow: hidden;
+      margin-bottom: 30px;
+    
+    .staff-member-overlay{
+      height: 100%;
+      width: 100%;
+      background-color: $green-glass;
+      position: absolute;
+      z-index: 100;
+      margin-left: -15px;
+      margin-right: -15px;
+      top: 360px;
+      transition: all .5s;
+      padding: 8px;
+      
+      h3{
+        margin: 0 0 10px 0;
+      }
+      
+      p{
+        font-size: 12px;
+        color: #FFF;
+      }
+      
+      &.staff-hover{
+        top: 0px;
+      }
+    }
+  }
+    
+  #section-staff-jumbo{
+    .jumbotron{
+      background-color: transparent;
+    }
+  }
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {  }
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {  }
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+  #section-staff-jumbo .jumbotron{
+    
+  }
+  
+  #staff-wrapper{
+    
+    .staff-member-row{
+     
+      .staff-member-pic-wrapper{
+        
+      }
+    }
+  }
+
+  
+  #section-food-pregame{
+    //overflow-y: scroll;
+    //max-height: 60vh;
+  }
+    
+
+}

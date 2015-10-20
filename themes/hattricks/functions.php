@@ -73,4 +73,48 @@ function bootstrap_checkout_fields_ht($fields) {
     return $fields;
 }
 
+add_action( 'init', 'staff_cpt_init' );
+/**
+ * Register a book post type.
+ *
+ * @link http://codex.wordpress.org/Function_Reference/register_post_type
+ */
+function staff_cpt_init() {
+	$labels = array(
+		'name'               => _x( 'Staff', 'post type general name', 'your-plugin-textdomain' ),
+		'singular_name'      => _x( 'Staff Member', 'post type singular name', 'your-plugin-textdomain' ),
+		'menu_name'          => _x( 'Staff', 'admin menu', 'your-plugin-textdomain' ),
+		'name_admin_bar'     => _x( 'Staff Member', 'add new on admin bar', 'your-plugin-textdomain' ),
+		'add_new'            => _x( 'Add New', 'staff', 'your-plugin-textdomain' ),
+		'add_new_item'       => __( 'Add New Staff member', 'your-plugin-textdomain' ),
+		'new_item'           => __( 'New Staff Member', 'your-plugin-textdomain' ),
+		'edit_item'          => __( 'Edit Staff Member', 'your-plugin-textdomain' ),
+		'view_item'          => __( 'View Staff Member', 'your-plugin-textdomain' ),
+		'all_items'          => __( 'All Staff', 'your-plugin-textdomain' ),
+		'search_items'       => __( 'Search Staff', 'your-plugin-textdomain' ),
+		'parent_item_colon'  => __( 'Parent Staff:', 'your-plugin-textdomain' ),
+		'not_found'          => __( 'No staff members found.', 'your-plugin-textdomain' ),
+		'not_found_in_trash' => __( 'No staff members found in Trash.', 'your-plugin-textdomain' )
+	);
+
+	$args = array(
+		'labels'             => $labels,
+                'description'        => __( 'Description.', 'your-plugin-textdomain' ),
+		'public'             => true,
+		'publicly_queryable' => true,
+		'show_ui'            => true,
+		'show_in_menu'       => true,
+		'query_var'          => true,
+		'rewrite'            => array( 'slug' => 'staff' ),
+		'capability_type'    => 'post',
+		'has_archive'        => true,
+		'hierarchical'       => false,
+		'menu_position'      => null,
+        'menu_icon'          => 'dashicons-id-alt',
+		'supports'           => array( 'title', 'editor', 'author', 'thumbnail', 'excerpt', 'comments' )
+	);
+
+	register_post_type( 'staff', $args );
+}
+
 ?>

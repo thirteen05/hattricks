@@ -51,6 +51,17 @@
             $('#section-food-pregame').fadeToggle();
           });
           
+          
+          $('.staff-member-pic-wrapper').hover(function(){
+            
+            $(this).find('.staff-member-overlay').addClass('staff-hover');
+            
+          }, function(){
+            
+            $(this).find('.staff-member-overlay').removeClass('staff-hover');
+            
+          });
+          
         </script>
       
       

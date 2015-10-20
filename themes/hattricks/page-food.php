@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<div id="food-wrapper">
+<div id="food-wrapper" data-stellar-background-ratio="0.1">
   <div class="jumbotron">
     <div class="container">
       <div class="row">
@@ -12,10 +12,15 @@
     </div>
   </div>
   <div class="container">
+
+    
+    <?php get_template_part('sections/food/section-food-pregame-images'); ?>
     <?php get_template_part('partials/shamrock-divider'); ?>
     <?php get_template_part('sections/food/section-food-pregame'); ?>
+    <?php get_template_part('sections/food/section-food-first-images'); ?>
     <?php get_template_part('partials/shamrock-divider'); ?>
     <?php get_template_part('sections/food/section-food-first'); ?>
+    <?php get_template_part('sections/food/section-food-second-images'); ?>
     <?php get_template_part('partials/shamrock-divider'); ?>
     <?php get_template_part('sections/food/section-food-second'); ?>
     <?php get_template_part('partials/shamrock-divider'); ?>

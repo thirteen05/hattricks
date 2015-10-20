@@ -82,24 +82,29 @@ a {
 
 /* line 62, sass/partials/_globals.scss */
 .outline {
-  border: 1px solid black; }
+  border: 1px dashed black;
+  min-height: 100px; }
 
-/* line 66, sass/partials/_globals.scss */
+/* line 67, sass/partials/_globals.scss */
 .full-height {
   height: 100vh; }
 
-/* line 70, sass/partials/_globals.scss */
+/* line 71, sass/partials/_globals.scss */
 .padding-top-30 {
   padding-top: 30px !important; }
 
-/* line 74, sass/partials/_globals.scss */
+/* line 75, sass/partials/_globals.scss */
+.padding-bottom-30 {
+  padding-bottom: 30px !important; }
+
+/* line 79, sass/partials/_globals.scss */
 .btn.btn-primary.btn-hattricks {
   background-color: rgba(8, 96, 43, 0.7);
   border: none;
   border-radius: 0px;
   font-family: 'Montserrat', Helvetica, Arial, sans-serif;
   display: inline-block; }
-  /* line 81, sass/partials/_globals.scss */
+  /* line 86, sass/partials/_globals.scss */
   .btn.btn-primary.btn-hattricks:hover {
     background-color: #08602b; }
 
@@ -284,46 +289,49 @@ a {
   background-size: cover;
   height: 100%; }
   /* line 7, sass/partials/_food.scss */
+  #food-wrapper .food-circle-image {
+    margin: 0 15px; }
+  /* line 11, sass/partials/_food.scss */
   #food-wrapper .menu-price {
     float: right; }
-  /* line 11, sass/partials/_food.scss */
+  /* line 15, sass/partials/_food.scss */
   #food-wrapper .food-menu-section-header {
     font-size: 44px; }
-  /* line 15, sass/partials/_food.scss */
+  /* line 19, sass/partials/_food.scss */
   #food-wrapper .jumbotron {
     background-color: transparent; }
-  /* line 19, sass/partials/_food.scss */
+  /* line 23, sass/partials/_food.scss */
   #food-wrapper #menu-wrapper {
     background-color: rgba(8, 96, 43, 0.7); }
-    /* line 25, sass/partials/_food.scss */
+    /* line 29, sass/partials/_food.scss */
     #food-wrapper #menu-wrapper hr {
       color: green; }
-  /* line 31, sass/partials/_food.scss */
+  /* line 35, sass/partials/_food.scss */
   #food-wrapper #section-food-pregame {
     background-color: rgba(8, 96, 43, 0.7);
     margin-bottom: 45px; }
-    /* line 35, sass/partials/_food.scss */
+    /* line 39, sass/partials/_food.scss */
     #food-wrapper #section-food-pregame p {
       margin-bottom: 30px; }
-  /* line 40, sass/partials/_food.scss */
+  /* line 44, sass/partials/_food.scss */
   #food-wrapper #section-food-first {
     background-color: rgba(8, 96, 43, 0.7);
     margin-bottom: 45px; }
-    /* line 44, sass/partials/_food.scss */
+    /* line 48, sass/partials/_food.scss */
     #food-wrapper #section-food-first p {
       margin-bottom: 30px; }
-  /* line 49, sass/partials/_food.scss */
+  /* line 53, sass/partials/_food.scss */
   #food-wrapper #section-food-second {
     background-color: rgba(8, 96, 43, 0.7);
     margin-bottom: 45px; }
-    /* line 53, sass/partials/_food.scss */
+    /* line 57, sass/partials/_food.scss */
     #food-wrapper #section-food-second p {
       margin-bottom: 30px; }
-  /* line 58, sass/partials/_food.scss */
+  /* line 62, sass/partials/_food.scss */
   #food-wrapper #section-food-third {
     background-color: rgba(8, 96, 43, 0.7);
     margin-bottom: 45px; }
-    /* line 62, sass/partials/_food.scss */
+    /* line 66, sass/partials/_food.scss */
     #food-wrapper #section-food-third p {
       margin-bottom: 30px; }
 
@@ -331,14 +339,86 @@ a {
 /* Medium devices (desktops, 992px and up) */
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-  /* line 77, sass/partials/_food.scss */
-  #section-food-jumbo .jumbotron {
-    height: 100vh;
-    overflow-y: scroll; }
-
-  /* line 82, sass/partials/_food.scss */
+  /* line 81, sass/partials/_food.scss */
   #menu-wrapper {
     min-height: 60vh; } }
+/* line 1, sass/partials/_drinks.scss */
+#drinks-wrapper {
+  background-image: url(img/Brick-Background-Hattricks.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  min-height: 100vh; }
+  /* line 7, sass/partials/_drinks.scss */
+  #drinks-wrapper .food-circle-image {
+    margin: 0 15px; }
+  /* line 11, sass/partials/_drinks.scss */
+  #drinks-wrapper .menu-price {
+    float: right; }
+  /* line 15, sass/partials/_drinks.scss */
+  #drinks-wrapper .food-menu-section-header {
+    font-size: 44px; }
+  /* line 19, sass/partials/_drinks.scss */
+  #drinks-wrapper .jumbotron {
+    background-color: transparent; }
+  /* line 23, sass/partials/_drinks.scss */
+  #drinks-wrapper #menu-wrapper {
+    background-color: rgba(8, 96, 43, 0.7); }
+    /* line 29, sass/partials/_drinks.scss */
+    #drinks-wrapper #menu-wrapper hr {
+      color: green; }
+  /* line 35, sass/partials/_drinks.scss */
+  #drinks-wrapper #section-drinks-wine-red {
+    background-color: rgba(8, 96, 43, 0.7); }
+
+/* Small devices (tablets, 768px and up) */
+/* Medium devices (desktops, 992px and up) */
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  /* line 50, sass/partials/_drinks.scss */
+  #menu-wrapper {
+    min-height: 60vh; } }
+/* line 1, sass/partials/_staff.scss */
+#staff-wrapper {
+  background-image: url(img/Brick-Background-Hattricks.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  min-height: 100vh; }
+  /* line 8, sass/partials/_staff.scss */
+  #staff-wrapper .staff-member-pic-wrapper {
+    position: relative;
+    height: 400px;
+    background-size: cover;
+    overflow: hidden;
+    margin-bottom: 30px; }
+    /* line 15, sass/partials/_staff.scss */
+    #staff-wrapper .staff-member-pic-wrapper .staff-member-overlay {
+      height: 100%;
+      width: 100%;
+      background-color: rgba(8, 96, 43, 0.7);
+      position: absolute;
+      z-index: 100;
+      margin-left: -15px;
+      margin-right: -15px;
+      top: 360px;
+      transition: all .5s;
+      padding: 8px; }
+      /* line 27, sass/partials/_staff.scss */
+      #staff-wrapper .staff-member-pic-wrapper .staff-member-overlay h3 {
+        margin: 0 0 10px 0; }
+      /* line 31, sass/partials/_staff.scss */
+      #staff-wrapper .staff-member-pic-wrapper .staff-member-overlay p {
+        font-size: 12px;
+        color: #FFF; }
+      /* line 36, sass/partials/_staff.scss */
+      #staff-wrapper .staff-member-pic-wrapper .staff-member-overlay.staff-hover {
+        top: 0px; }
+  /* line 43, sass/partials/_staff.scss */
+  #staff-wrapper #section-staff-jumbo .jumbotron {
+    background-color: transparent; }
+
+/* Small devices (tablets, 768px and up) */
+/* Medium devices (desktops, 992px and up) */
+/* Large devices (large desktops, 1200px and up) */
 /* line 3, sass/partials/_timeline.scss */
 .cd-timeline-content h2 {
   display: inline-block; }

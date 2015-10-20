@@ -22,13 +22,16 @@
         </p>
     </div>
     <div class="col-md-6">
-        <h4 class="font-bevan font-yellow text-shadow">Stuffed Haddock <span class="menu-price font-white">$8.90</span></h4>
+        <h4 class="font-bevan font-yellow text-shadow">Lightning Chili <span class="menu-price font-white">$4.50</span></h4>
         <p class="font-white">
-          Haddock Filet filled with a Crabmeat Stuffing, topped with a White Wine Butter Sauce. Served with Yellow Rice and Sauteed Vegetables.
+          Seasoned Ground Beef simmered lightly with Italian Roma Tomatoes, Onions and Red Beans. Topped with Shredded Cheese and Sour Cream.
         </p>
-        <h4 class="font-bevan font-yellow text-shadow">Grouper Picata  <span class="menu-price font-white">$8.00</span></h4>
-        <p class="font-white">
-          A filet of the freshest Florida Grouper, lightly coated with flour and lightly fried to perfection. Topped with Capers and served with our Original Mashed Potatoes and Sauteed Vegetables.
+        <h4 class="font-bevan font-yellow text-shadow">Garlic Bread  <span class="menu-price font-white">$3.00</span></h4>
+      <h4 class="font-bevan font-yellow text-shadow">Fries  <span class="menu-price font-white">$4.00</span></h4>
+      <h4 class="font-bevan font-yellow text-shadow">Side Salad  <span class="menu-price font-white">$4.50</span></h4>
+      <h4 class="font-bevan font-yellow text-shadow">Penalty Box  <span class="menu-price font-white">$4.95</span></h4>
+      <p class="font-white">
+          Dessert of the Day. Ask your server for more info.
         </p>
     </div>
   </div>

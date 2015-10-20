@@ -4,6 +4,10 @@
   background-size: cover;
   height: 100%;
   
+  .food-circle-image{
+    margin: 0 15px;
+  }
+  
   .menu-price{
     float: right;
   }
@@ -73,11 +77,6 @@
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-
-  #section-food-jumbo .jumbotron{
-    height: 100vh;
-    overflow-y: scroll;
-  }
   
   #menu-wrapper{
     min-height: 60vh;
