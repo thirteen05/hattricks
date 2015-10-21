@@ -32,9 +32,43 @@
     
   }
   
+  #section-drinks-specials{
+    
+    .row{
+      position: relative;
+    }
+    
+    .col-md-6:first-of-type{
+      padding-bottom: 15px;
+    }
+    
+    #drinks-specials-wrapper{
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+    
+    h1{
+      
+    }
+  }
+  
   #section-drinks-wine-red{
     background-color: $green-glass;
+    margin-bottom: 45px;
     
+    p{
+      margin-bottom: 30px;
+    }
+  }
+  
+  #section-drinks-wine-white{
+    background-color: $green-glass;
+    margin-bottom: 45px;
+    
+    p{
+      margin-bottom: 30px;
+    }
   }
 }
 
@@ -42,7 +76,27 @@
 @media (min-width: 768px) {  }
 
 /* Medium devices (desktops, 992px and up) */
-@media (min-width: 992px) {  }
+@media (min-width: 992px) {
+
+  #section-drinks-specials{
+    height: 231px;
+    
+    h1{
+      font-size: 50px;
+      
+      span{
+        font-size: 36px;
+        line-height: 20px;
+      }
+    }
+    
+    h2{
+      margin-bottom: 0px;
+    }
+  }
+
+
+}
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {

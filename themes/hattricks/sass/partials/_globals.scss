@@ -87,3 +87,14 @@ a{
     background-color: $green-solid;
   }
 }
+
+.offScreen
+{
+    opacity:0;
+    top: 60px;
+}
+
+.onScreen{
+    opacity: 1;
+    top: 0px;
+}

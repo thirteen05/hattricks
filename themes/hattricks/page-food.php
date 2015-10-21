@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<div id="food-wrapper" data-stellar-background-ratio="0.1">
+<div id="food-wrapper">
   <div class="jumbotron">
     <div class="container">
       <div class="row">

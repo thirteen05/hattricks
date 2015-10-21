@@ -13,8 +13,12 @@
   </div>
   <div class="container">
     
+    <?php get_template_part('sections/drinks/section-drinks-specials'); ?>
     <?php get_template_part('partials/shamrock-divider'); ?>
     <?php get_template_part('sections/drinks/section-drinks-wine-red'); ?>
+     <?php get_template_part('sections/food/section-food-second-images'); ?>
+    <?php get_template_part('partials/shamrock-divider'); ?>
+    <?php get_template_part('sections/drinks/section-drinks-wine-white'); ?>
   </div>
 </div>
 

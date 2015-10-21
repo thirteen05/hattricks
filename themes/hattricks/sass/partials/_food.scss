@@ -6,6 +6,8 @@
   
   .food-circle-image{
     margin: 0 15px;
+    position: relative;
+    transition: opacity .5s, top .7s;
   }
   
   .menu-price{
