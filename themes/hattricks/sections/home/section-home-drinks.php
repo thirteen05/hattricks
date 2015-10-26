@@ -1,5 +1,5 @@
 <section id="section-home-drinks">
-  <div class="jumbotron section" id="jumbotron-4" data-stellar-background-ratio="0.5">
+  <div class="jumbotron section" id="jumbotron-4">
     <div class="container text-center">
       <div class="row">
         <div class="col-md-6 text-right" style="padding-top: 80px;">
@@ -13,7 +13,6 @@
           </p>
         </div>
         <div class="col-md-6">
-          <div id="Stage" class="Food-Animation"></div>
         </div>
       </div>
     </div>

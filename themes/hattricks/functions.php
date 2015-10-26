@@ -117,4 +117,6 @@ function staff_cpt_init() {
 	register_post_type( 'staff', $args );
 }
 
+remove_action( 'woocommerce_before_checkout_form', 'woocommerce_checkout_login_form', 10 );
+
 ?>

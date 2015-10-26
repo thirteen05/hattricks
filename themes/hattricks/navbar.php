@@ -1,5 +1,5 @@
 <div>
-  <nav class="navbar navbar-default navbar-fixed-top hidden-xs" id="hattricks-navbar">
+  <nav class="navbar navbar-default navbar-fixed-top hidden-xs hidden-sm" id="hattricks-navbar">
     <div class="container">
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <?php

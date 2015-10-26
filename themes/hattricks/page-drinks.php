@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<div id="drinks-wrapper" data-stellar-background-ratio="0.1">
+<div id="drinks-wrapper">
   <div class="jumbotron">
     <div class="container">
       <div class="row">
@@ -16,11 +16,11 @@
     <?php get_template_part('sections/drinks/section-drinks-specials'); ?>
     <?php get_template_part('partials/shamrock-divider'); ?>
     <?php get_template_part('sections/drinks/section-drinks-wine-red'); ?>
-     <?php get_template_part('sections/food/section-food-second-images'); ?>
+    <?php get_template_part('sections/food/section-food-second-images'); ?>
     <?php get_template_part('partials/shamrock-divider'); ?>
     <?php get_template_part('sections/drinks/section-drinks-wine-white'); ?>
+    
   </div>
 </div>
-
 
 <?php get_footer(); ?>

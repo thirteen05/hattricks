@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*
 Theme Name: Hattricks Custom Theme 2015
 Author: Jed Darrohn @ thirteen05 creative
@@ -63,57 +64,61 @@ p,
   font-size: 14px; }
 
 /* line 41, sass/partials/_globals.scss */
+.jumbotron {
+  margin-bottom: 0px; }
+
+/* line 45, sass/partials/_globals.scss */
 a {
   color: #f6ee3d; }
-  /* line 44, sass/partials/_globals.scss */
+  /* line 48, sass/partials/_globals.scss */
   a:hover {
     color: green;
     text-decoration: none; }
-  /* line 49, sass/partials/_globals.scss */
+  /* line 53, sass/partials/_globals.scss */
   a:active {
     text-decoration: none; }
-  /* line 53, sass/partials/_globals.scss */
+  /* line 57, sass/partials/_globals.scss */
   a:focus {
     text-decoration: none; }
 
-/* line 58, sass/partials/_globals.scss */
+/* line 62, sass/partials/_globals.scss */
 .text-shadow {
   text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7); }
 
-/* line 62, sass/partials/_globals.scss */
+/* line 66, sass/partials/_globals.scss */
 .outline {
   border: 1px dashed black;
   min-height: 100px; }
 
-/* line 67, sass/partials/_globals.scss */
+/* line 71, sass/partials/_globals.scss */
 .full-height {
   height: 100vh; }
 
-/* line 71, sass/partials/_globals.scss */
+/* line 75, sass/partials/_globals.scss */
 .padding-top-30 {
   padding-top: 30px !important; }
 
-/* line 75, sass/partials/_globals.scss */
+/* line 79, sass/partials/_globals.scss */
 .padding-bottom-30 {
   padding-bottom: 30px !important; }
 
-/* line 79, sass/partials/_globals.scss */
+/* line 83, sass/partials/_globals.scss */
 .btn.btn-primary.btn-hattricks {
   background-color: rgba(8, 96, 43, 0.7);
   border: none;
   border-radius: 0px;
   font-family: 'Montserrat', Helvetica, Arial, sans-serif;
   display: inline-block; }
-  /* line 86, sass/partials/_globals.scss */
+  /* line 90, sass/partials/_globals.scss */
   .btn.btn-primary.btn-hattricks:hover {
     background-color: #08602b; }
 
-/* line 91, sass/partials/_globals.scss */
+/* line 95, sass/partials/_globals.scss */
 .offScreen {
   opacity: 0;
   top: 60px; }
 
-/* line 97, sass/partials/_globals.scss */
+/* line 101, sass/partials/_globals.scss */
 .onScreen {
   opacity: 1;
   top: 0px; }
@@ -174,6 +179,43 @@ a {
 #scroll-to-top:hover {
   cursor: pointer;
   background-color: rgba(8, 96, 43, 0.9); }
+
+/* line 67, sass/partials/_navbar.scss */
+#mobile-nav-wrapper {
+  height: 100vh;
+  width: 200px;
+  background-color: rgba(8, 96, 43, 0.9);
+  position: fixed;
+  z-index: 1500;
+  left: -200px;
+  transition: left .5s;
+  padding: 15px; }
+  /* line 77, sass/partials/_navbar.scss */
+  #mobile-nav-wrapper.mobile-nav-show {
+    left: 0px; }
+  /* line 82, sass/partials/_navbar.scss */
+  #mobile-nav-wrapper #hamburger {
+    position: absolute;
+    top: 15px;
+    right: -35px; }
+    /* line 87, sass/partials/_navbar.scss */
+    #mobile-nav-wrapper #hamburger :hover {
+      cursor: pointer; }
+  /* line 92, sass/partials/_navbar.scss */
+  #mobile-nav-wrapper #mobile-nav-menu {
+    list-style-type: none;
+    padding: 0px; }
+    /* line 96, sass/partials/_navbar.scss */
+    #mobile-nav-wrapper #mobile-nav-menu li {
+      font-family: "Bevan", Times New Roman, serif !important;
+      text-transform: uppercase;
+      font-size: 28px; }
+      /* line 101, sass/partials/_navbar.scss */
+      #mobile-nav-wrapper #mobile-nav-menu li a {
+        transition: all .5s; }
+        /* line 104, sass/partials/_navbar.scss */
+        #mobile-nav-wrapper #mobile-nav-menu li a:hover {
+          color: #FFF; }
 
 /* line 1, sass/partials/_trigger.scss */
 #trigger-wrapper {
@@ -260,38 +302,96 @@ a {
     /* IE 9 */
     zoom: 110%;
     transform: scale(1.1, 1.1); }
+/* line 62, sass/partials/_home.scss */
+#section-home-history #home-testimonial-wrapper {
+  background-color: rgba(8, 96, 43, 0.7);
+  min-height: 100px;
+  padding: 15px; }
+/* line 68, sass/partials/_home.scss */
+#section-home-history .slick-next, #section-home-history .slick-prev {
+  position: absolute;
+  bottom: 15px;
+  top: initial; }
+/* line 74, sass/partials/_home.scss */
+#section-home-history .slick-next {
+  right: 15px; }
+/* line 79, sass/partials/_home.scss */
+#section-home-history .slick-prev {
+  left: 15px; }
 
-/* line 65, sass/partials/_home.scss */
+/* line 86, sass/partials/_home.scss */
 #section-home-food .jumbotron {
   background-image: url(img/test-bg-3.jpg);
   background-size: cover;
   background-attachment: fixed;
   min-height: 100vh;
   padding-top: 0px; }
-  /* line 72, sass/partials/_home.scss */
-  #section-home-food .jumbotron .row:first-of-type {
-    min-height: 70vh; }
-  /* line 76, sass/partials/_home.scss */
+  /* line 95, sass/partials/_home.scss */
+  #section-home-food .jumbotron .row:first-of-type .col-md-6 {
+    height: 100%; }
+    /* line 98, sass/partials/_home.scss */
+    #section-home-food .jumbotron .row:first-of-type .col-md-6 #carousel-home-food {
+      position: absolute;
+      bottom: 0; }
+    /* line 103, sass/partials/_home.scss */
+    #section-home-food .jumbotron .row:first-of-type .col-md-6 .carousel-indicators {
+      bottom: initial;
+      position: relative;
+      left: initial;
+      text-align: right;
+      width: 100%;
+      margin-left: 0px; }
+      /* line 111, sass/partials/_home.scss */
+      #section-home-food .jumbotron .row:first-of-type .col-md-6 .carousel-indicators li {
+        text-indent: 0px;
+        width: auto;
+        height: auto;
+        border: none;
+        display: block;
+        font-family: "Bevan", Times New Roman, serif !important;
+        text-transform: uppercase;
+        color: #FFF;
+        font-size: 36px;
+        line-height: 40px;
+        margin: 0px; }
+        /* line 124, sass/partials/_home.scss */
+        #section-home-food .jumbotron .row:first-of-type .col-md-6 .carousel-indicators li.active {
+          width: auto;
+          height: auto;
+          background-color: transparent;
+          color: yellow;
+          margin: 0px; }
+  /* line 137, sass/partials/_home.scss */
   #section-home-food .jumbotron .row:nth-of-type(2) {
-    min-height: 25vh;
     background-color: rgba(8, 96, 43, 0.7);
     padding: 20px 15px;
     transform: rotateX(); }
 
-/* line 87, sass/partials/_home.scss */
+/* line 147, sass/partials/_home.scss */
 #section-home-drinks .jumbotron {
   background-image: url(img/test-bg-4.jpg);
   background-size: cover;
   min-height: 100vh;
   padding-top: 0px; }
 
-/* line 98, sass/partials/_home.scss */
+/* line 158, sass/partials/_home.scss */
 #section-home-thunder .jumbotron {
   background-image: url(img/test-bg-5.jpg);
   background-size: cover;
   min-height: 100vh;
   padding-top: 0px; }
 
+@media (min-width: 996px) {
+  /* line 171, sass/partials/_home.scss */
+  #section-home-food .jumbotron {
+    background-image: url(img/test-bg-3.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100vh;
+    padding-top: 0px; }
+    /* line 178, sass/partials/_home.scss */
+    #section-home-food .jumbotron .row:first-of-type {
+      height: 450px; } }
 /* line 1, sass/partials/_food.scss */
 #food-wrapper {
   background-image: url(img/Brick-Background-Hattricks.jpg);
@@ -467,6 +567,13 @@ a {
 /* Small devices (tablets, 768px and up) */
 /* Medium devices (desktops, 992px and up) */
 /* Large devices (large desktops, 1200px and up) */
+/* line 2, sass/partials/_history.scss */
+#section-history-wrapper .jumbotron {
+  background-image: url(img/test-bg.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 100vh; }
+
 /* line 3, sass/partials/_timeline.scss */
 .cd-timeline-content h2 {
   display: inline-block; }
@@ -586,19 +693,268 @@ div.shipping_address {
 #woocommerce-cart-empty-wrapper {
   padding-top: 60px; }
 
+/* line 131, sass/partials/_woo.scss */
+.woocommerce-billing-fields label,
+.woocommerce-shipping-fields label {
+  color: #CCC; }
+
+/* line 139, sass/partials/_woo.scss */
+.create-account p {
+  color: #FFF; }
+
 /* Extra small devices (phones, less than 768px) */
 /* No media query since this is the default in Bootstrap */
 /* Small devices (tablets, 768px and up) */
 /* Medium devices (desktops, 992px and up) */
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-  /* line 145, sass/partials/_woo.scss */
+  /* line 162, sass/partials/_woo.scss */
   #section-woo-shop-jumbo .jumbotron {
     min-height: 25vh; }
 
-  /* line 151, sass/partials/_woo.scss */
+  /* line 168, sass/partials/_woo.scss */
   .woocommerce .table th {
     font-size: 2rem; } }
+/* Slider */
+/* line 3, bower_components/slick-carousel/slick/slick.scss */
+.slick-slider {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent; }
+
+/* line 18, bower_components/slick-carousel/slick/slick.scss */
+.slick-list {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  margin: 0;
+  padding: 0; }
+  /* line 25, bower_components/slick-carousel/slick/slick.scss */
+  .slick-list:focus {
+    outline: none; }
+  /* line 29, bower_components/slick-carousel/slick/slick.scss */
+  .slick-list.dragging {
+    cursor: pointer;
+    cursor: hand; }
+
+/* line 34, bower_components/slick-carousel/slick/slick.scss */
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0); }
+
+/* line 43, bower_components/slick-carousel/slick/slick.scss */
+.slick-track {
+  position: relative;
+  left: 0;
+  top: 0;
+  display: block; }
+  /* line 49, bower_components/slick-carousel/slick/slick.scss */
+  .slick-track:before, .slick-track:after {
+    content: "";
+    display: table; }
+  /* line 55, bower_components/slick-carousel/slick/slick.scss */
+  .slick-track:after {
+    clear: both; }
+  /* line 59, bower_components/slick-carousel/slick/slick.scss */
+  .slick-loading .slick-track {
+    visibility: hidden; }
+
+/* line 63, bower_components/slick-carousel/slick/slick.scss */
+.slick-slide {
+  float: left;
+  height: 100%;
+  min-height: 1px;
+  display: none; }
+  /* line 67, bower_components/slick-carousel/slick/slick.scss */
+  [dir="rtl"] .slick-slide {
+    float: right; }
+  /* line 70, bower_components/slick-carousel/slick/slick.scss */
+  .slick-slide img {
+    display: block; }
+  /* line 73, bower_components/slick-carousel/slick/slick.scss */
+  .slick-slide.slick-loading img {
+    display: none; }
+  /* line 79, bower_components/slick-carousel/slick/slick.scss */
+  .slick-slide.dragging img {
+    pointer-events: none; }
+  /* line 83, bower_components/slick-carousel/slick/slick.scss */
+  .slick-initialized .slick-slide {
+    display: block; }
+  /* line 87, bower_components/slick-carousel/slick/slick.scss */
+  .slick-loading .slick-slide {
+    visibility: hidden; }
+  /* line 91, bower_components/slick-carousel/slick/slick.scss */
+  .slick-vertical .slick-slide {
+    display: block;
+    height: auto;
+    border: 1px solid transparent; }
+
+/* line 97, bower_components/slick-carousel/slick/slick.scss */
+.slick-arrow.slick-hidden {
+  display: none; }
+
+/* Slider */
+/* line 40, bower_components/slick-carousel/slick/slick-theme.scss */
+.slick-loading .slick-list {
+  background: #fff url('images/ajax-loader.gif') center center no-repeat; }
+
+/* Icons */
+@font-face {
+  font-family: "slick";
+  src: url('fonts/slick.eot');
+  src: url('fonts/slick.eot?#iefix') format("embedded-opentype"), url('fonts/slick.woff') format("woff"), url('fonts/slick.ttf') format("truetype"), url('fonts/slick.svg#slick') format("svg");
+  font-weight: normal;
+  font-style: normal; }
+/* Arrows */
+/* line 58, bower_components/slick-carousel/slick/slick-theme.scss */
+.slick-prev,
+.slick-next {
+  position: absolute;
+  display: block;
+  height: 20px;
+  width: 20px;
+  line-height: 0px;
+  font-size: 0px;
+  cursor: pointer;
+  background: transparent;
+  color: transparent;
+  top: 50%;
+  margin-top: -10px;
+  padding: 0;
+  border: none;
+  outline: none; }
+  /* line 74, bower_components/slick-carousel/slick/slick-theme.scss */
+  .slick-prev:hover, .slick-prev:focus,
+  .slick-next:hover,
+  .slick-next:focus {
+    outline: none;
+    background: transparent;
+    color: transparent; }
+    /* line 78, bower_components/slick-carousel/slick/slick-theme.scss */
+    .slick-prev:hover:before, .slick-prev:focus:before,
+    .slick-next:hover:before,
+    .slick-next:focus:before {
+      opacity: 1; }
+  /* line 82, bower_components/slick-carousel/slick/slick-theme.scss */
+  .slick-prev.slick-disabled:before,
+  .slick-next.slick-disabled:before {
+    opacity: 0.25; }
+
+/* line 87, bower_components/slick-carousel/slick/slick-theme.scss */
+.slick-prev:before, .slick-next:before {
+  font-family: "slick";
+  font-size: 20px;
+  line-height: 1;
+  color: white;
+  opacity: 0.75;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+/* line 97, bower_components/slick-carousel/slick/slick-theme.scss */
+.slick-prev {
+  left: -25px; }
+  /* line 99, bower_components/slick-carousel/slick/slick-theme.scss */
+  [dir="rtl"] .slick-prev {
+    left: auto;
+    right: -25px; }
+  /* line 103, bower_components/slick-carousel/slick/slick-theme.scss */
+  .slick-prev:before {
+    content: "←"; }
+    /* line 105, bower_components/slick-carousel/slick/slick-theme.scss */
+    [dir="rtl"] .slick-prev:before {
+      content: "→"; }
+
+/* line 111, bower_components/slick-carousel/slick/slick-theme.scss */
+.slick-next {
+  right: -25px; }
+  /* line 113, bower_components/slick-carousel/slick/slick-theme.scss */
+  [dir="rtl"] .slick-next {
+    left: -25px;
+    right: auto; }
+  /* line 117, bower_components/slick-carousel/slick/slick-theme.scss */
+  .slick-next:before {
+    content: "→"; }
+    /* line 119, bower_components/slick-carousel/slick/slick-theme.scss */
+    [dir="rtl"] .slick-next:before {
+      content: "←"; }
+
+/* Dots */
+/* line 127, bower_components/slick-carousel/slick/slick-theme.scss */
+.slick-slider {
+  margin-bottom: 30px; }
+
+/* line 131, bower_components/slick-carousel/slick/slick-theme.scss */
+.slick-dots {
+  position: absolute;
+  bottom: -45px;
+  list-style: none;
+  display: block;
+  text-align: center;
+  padding: 0;
+  width: 100%; }
+  /* line 139, bower_components/slick-carousel/slick/slick-theme.scss */
+  .slick-dots li {
+    position: relative;
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    margin: 0 5px;
+    padding: 0;
+    cursor: pointer; }
+    /* line 147, bower_components/slick-carousel/slick/slick-theme.scss */
+    .slick-dots li button {
+      border: 0;
+      background: transparent;
+      display: block;
+      height: 20px;
+      width: 20px;
+      outline: none;
+      line-height: 0px;
+      font-size: 0px;
+      color: transparent;
+      padding: 5px;
+      cursor: pointer; }
+      /* line 159, bower_components/slick-carousel/slick/slick-theme.scss */
+      .slick-dots li button:hover, .slick-dots li button:focus {
+        outline: none; }
+        /* line 161, bower_components/slick-carousel/slick/slick-theme.scss */
+        .slick-dots li button:hover:before, .slick-dots li button:focus:before {
+          opacity: 1; }
+      /* line 165, bower_components/slick-carousel/slick/slick-theme.scss */
+      .slick-dots li button:before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: "";
+        width: 20px;
+        height: 20px;
+        font-family: "slick";
+        font-size: 6px;
+        line-height: 20px;
+        text-align: center;
+        color: white;
+        opacity: 0.25;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale; }
+    /* line 182, bower_components/slick-carousel/slick/slick-theme.scss */
+    .slick-dots li.slick-active button:before {
+      color: white;
+      opacity: 0.75; }
+
 /* Extra small devices (phones, less than 768px) */
 /* No media query since this is the default in Bootstrap */
 /* Small devices (tablets, 768px and up) */

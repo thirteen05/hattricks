@@ -18,6 +18,6 @@
     "jquery-selectric": "~1.9.3",
     "jquery.scrollTo": "~2.1.1",
     "jquery.stellar": "stellar.js#~0.6.2",
-    "vivus": "~0.2.2"
+    "slick-carousel": "~1.5.8"
   }
 }

@@ -19,7 +19,34 @@ The sports memorabilia lined walls provide you with a comfortable atmosphere to 
           </a>
         </div>
         <div class="col-md-6">
-          
+            <div class="row">
+              <div class="col-md-12 no-margin no-padding">
+                <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/img/Hattricks-Building-Old.png"
+              </div>
+            </div>
+            <div class="row no-margin">
+              <div class="col-md-12" id="home-testimonial-wrapper">
+                <h3 class="font-bevan font-yellow"><i class="fa fa-quote-right fa-2x font-white"></i> Testimonials</h3>
+                <div class="your-class">
+                  <div>
+                    <p class="font-white">
+                      "Leberkas picanha ribeye, t-bone boudin porchetta spare ribs swine ball tip shank sirloin hamburger filet mignon pancetta. Fatback alcatra landjaeger, meatball short loin shank chicken rump brisket tail pork loin."
+                    </p>
+                  </div>
+                  <div>
+                    <p class="font-white">
+                      "Flank filet mignon cow, salami sausage pork chop tail frankfurter pork meatball tongue porchetta."
+                    </p>
+                  </div>
+                  <div>
+                  <p class="font-white">
+                    "Frankfurter brisket kielbasa, turkey andouille t-bone cow. Landjaeger ribeye prosciutto doner alcatra, pork loin ball tip kevin jerky. Porchetta jerky leberkas, bresaola biltong cow shoulder flank strip steak tenderloin shank.   "  
+                  </p>
+                  </div>
+                </div>
+                <div id="home-testimonial-arrow-wrapper"></div>
+              </div>
+            </div>
         </div>
       </div>
     </div>

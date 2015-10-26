@@ -21,7 +21,7 @@
         <?php if(is_home()): ?>
       
         <!--Adobe Edge Runtime-->
-            <script type="text/javascript" charset="utf-8" src="http://animate.adobe.com/runtime/6.0.0/edge.6.0.0.min.js"></script>
+<!--            <script type="text/javascript" charset="utf-8" src="http://animate.adobe.com/runtime/6.0.0/edge.6.0.0.min.js"></script>
             <style>
                 .edgeLoad-Home-Food-Animation { visibility:hidden; }
             </style>
@@ -35,7 +35,7 @@
             width: "550px",
             height: "400px"
         }, {"dom":{}}, {"dom":{}});
-        </script>
+        </script>-->
       
         <!--Adobe Edge Runtime End-->
       
@@ -46,7 +46,7 @@
       
       <?php if(is_home()): ?>
       
-      <div id="trigger-wrapper">
+      <div class="hidden-xs" id="trigger-wrapper">
         <ul class="custom-trigger-list nav">
           <li class="custom-trigger" id="custom-trigger-home-top"><a href="#jumbotron-1"></a></li>
           <li class="custom-trigger" id="custom-trigger-home-history"><a href="#jumbotron-2"></a></li>
@@ -59,3 +59,4 @@
       <?php endif; ?>
       
       <?php get_template_part('navbar'); ?>
+      <?php get_template_part('navbar-mobile'); ?>
