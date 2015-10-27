@@ -132,7 +132,7 @@ wc_print_notices();
 					</div>
 				<?php } ?>
 
-				<input type="submit" class="button btn btn-primary btn-lg btn-hattricks" name="update_cart" value="<?php esc_attr_e( 'Update Cart', 'woocommerce' ); ?>" />
+				<input type="submit" id="btn-update-cart" class="button btn btn-primary btn-lg btn-hattricks" name="update_cart" value="<?php esc_attr_e( 'Update Cart', 'woocommerce' ); ?>" />
 
 				<?php do_action( 'woocommerce_cart_actions' ); ?>
 

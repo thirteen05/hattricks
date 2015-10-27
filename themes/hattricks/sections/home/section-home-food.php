@@ -19,7 +19,7 @@
                 </div>
               </div>
               <div class="item">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/Hattricks-Home-Hot-Wings.png" alt="...">
+                <img style="max-height: 342px" src="<?php echo get_template_directory_uri(); ?>/img/Hattricks-Riff-Raff.png" alt="...">
                 <div class="carousel-caption">
                 </div>
               </div>

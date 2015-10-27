@@ -603,52 +603,53 @@ a {
     font-size: 18px;
     font-family: "Bevan", Times New Roman, serif !important;
     text-transform: uppercase;
-    margin-bottom: 15px; }
-  /* line 22, sass/partials/_woo.scss */
+    margin-bottom: 15px;
+    color: #CCC; }
+  /* line 23, sass/partials/_woo.scss */
   #woo-shop-wrapper .woocommerce-ordering {
     max-width: 300px; }
-  /* line 26, sass/partials/_woo.scss */
+  /* line 27, sass/partials/_woo.scss */
   #woo-shop-wrapper .page-title {
     color: #FFF; }
-  /* line 30, sass/partials/_woo.scss */
+  /* line 31, sass/partials/_woo.scss */
   #woo-shop-wrapper .product .price {
     font-size: 24px; }
-  /* line 34, sass/partials/_woo.scss */
+  /* line 35, sass/partials/_woo.scss */
   #woo-shop-wrapper .product .single_add_to_cart_button {
     margin-top: 15px; }
 
-/* line 39, sass/partials/_woo.scss */
+/* line 40, sass/partials/_woo.scss */
 ul.products {
   list-style-type: none;
   padding-left: 0px;
   padding-top: 30px; }
-  /* line 44, sass/partials/_woo.scss */
+  /* line 45, sass/partials/_woo.scss */
   ul.products .product h3 {
     font-family: "Bevan", Times New Roman, serif !important;
     text-transform: uppercase;
     font-size: 2rem; }
 
-/* line 51, sass/partials/_woo.scss */
+/* line 52, sass/partials/_woo.scss */
 .woocommerce {
   background-color: #02180b;
   padding-bottom: 60px; }
-  /* line 55, sass/partials/_woo.scss */
+  /* line 56, sass/partials/_woo.scss */
   .woocommerce .table {
     margin-top: 30px;
     background-color: rgba(8, 96, 43, 0.7);
     border-color: #08602b; }
-    /* line 60, sass/partials/_woo.scss */
+    /* line 61, sass/partials/_woo.scss */
     .woocommerce .table td {
       border-color: #08602b;
       font-size: 2rem;
       color: #FFF; }
-      /* line 65, sass/partials/_woo.scss */
+      /* line 66, sass/partials/_woo.scss */
       .woocommerce .table td.product-remove {
         font-size: 1.5rem; }
-    /* line 70, sass/partials/_woo.scss */
+    /* line 71, sass/partials/_woo.scss */
     .woocommerce .table tbody {
       border-color: #08602b; }
-    /* line 74, sass/partials/_woo.scss */
+    /* line 75, sass/partials/_woo.scss */
     .woocommerce .table th {
       font-family: "Bevan", Times New Roman, serif !important;
       color: #f6ee3d;
@@ -657,50 +658,55 @@ ul.products {
       text-align: center;
       vertical-align: middle;
       font-weight: normal; }
-  /* line 86, sass/partials/_woo.scss */
+  /* line 87, sass/partials/_woo.scss */
   .woocommerce .woocommerce-message, .woocommerce .woocommerce-error, .woocommerce .woocommerce-info {
     font-size: 2rem !important;
-    color: #FFF; }
+    color: #FFF;
+    display: none; }
 
-/* line 94, sass/partials/_woo.scss */
+/* line 96, sass/partials/_woo.scss */
 .woocommerce-tabs .tabs {
   display: none; }
-/* line 98, sass/partials/_woo.scss */
+/* line 100, sass/partials/_woo.scss */
 .woocommerce-tabs .panel {
   background-color: rgba(8, 96, 43, 0.7);
   padding: 15px;
   border-radius: 0px; }
-  /* line 103, sass/partials/_woo.scss */
+  /* line 105, sass/partials/_woo.scss */
   .woocommerce-tabs .panel p {
     color: #FFF; }
 
-/* line 109, sass/partials/_woo.scss */
+/* line 111, sass/partials/_woo.scss */
 .form-control-ht {
   background-color: rgba(8, 96, 43, 0.7);
   border-radius: 0px;
   color: #FFF;
   border-color: green; }
 
-/* line 116, sass/partials/_woo.scss */
+/* line 118, sass/partials/_woo.scss */
 #ship-to-different-address {
   font-weight: normal; }
 
-/* line 120, sass/partials/_woo.scss */
+/* line 122, sass/partials/_woo.scss */
 div.shipping_address {
   display: none; }
 
-/* line 124, sass/partials/_woo.scss */
+/* line 126, sass/partials/_woo.scss */
 #woocommerce-cart-empty-wrapper {
   padding-top: 60px; }
 
-/* line 131, sass/partials/_woo.scss */
+/* line 133, sass/partials/_woo.scss */
 .woocommerce-billing-fields label,
 .woocommerce-shipping-fields label {
   color: #CCC; }
 
-/* line 139, sass/partials/_woo.scss */
+/* line 141, sass/partials/_woo.scss */
 .create-account p {
   color: #FFF; }
+
+/* line 147, sass/partials/_woo.scss */
+#btn-update-cart, #btn-proceed-checkout {
+  background-color: #1fad57; }
 
 /* Extra small devices (phones, less than 768px) */
 /* No media query since this is the default in Bootstrap */
@@ -708,13 +714,231 @@ div.shipping_address {
 /* Medium devices (desktops, 992px and up) */
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-  /* line 162, sass/partials/_woo.scss */
+  /* line 168, sass/partials/_woo.scss */
   #section-woo-shop-jumbo .jumbotron {
     min-height: 25vh; }
 
-  /* line 168, sass/partials/_woo.scss */
+  /* line 174, sass/partials/_woo.scss */
   .woocommerce .table th {
     font-size: 2rem; } }
+/* START Make the cart table responsive */
+/* http://css-tricks.com/responsive-data-tables/ */
+@media screen and (max-width: 768px) {
+  /* Force table to not be like tables anymore */
+  /* line 6, sass/partials/_cart-responsive.scss */
+  .woocommerce table.shop_table,
+  .woocommerce table.shop_table thead,
+  .woocommerce table.shop_table tbody,
+  .woocommerce table.shop_table th,
+  .woocommerce table.shop_table td,
+  .woocommerce table.shop_table tr {
+    display: block; }
+
+  /* Hide table headers (but not display: none;, for accessibility) */
+  /* line 16, sass/partials/_cart-responsive.scss */
+  .woocommerce table.shop_table thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px; }
+
+  /* line 22, sass/partials/_cart-responsive.scss */
+  .woocommerce table.shop_table tr {
+    /*border: 1px solid #d2d3d3; */ }
+
+  /* line 26, sass/partials/_cart-responsive.scss */
+  .woocommerce table.shop_table td {
+    /* Behave like a "row" */
+    /*border: 1px solid #d2d3d3;*/
+    position: relative;
+    padding-left: 30% !important; }
+
+  /* line 33, sass/partials/_cart-responsive.scss */
+  .woocommerce table.shop_table {
+    border: none; }
+
+  /* line 37, sass/partials/_cart-responsive.scss */
+  .woocommerce table.shop_table td.product-spacer {
+    border-color: #FFF;
+    height: 10px; }
+
+  /* line 42, sass/partials/_cart-responsive.scss */
+  .woocommerce table.shop_table td:before {
+    /* Now like a table header */
+    position: absolute;
+    /* Top/left values mimic padding */
+    top: 6px;
+    left: 6px;
+    width: 25%;
+    padding-right: 10px;
+    white-space: nowrap; }
+
+  /*
+  Label the data
+  */
+  /* line 58, sass/partials/_cart-responsive.scss */
+  .woocommerce table.shop_table td.product-remove:before {
+    content: "Delete"; }
+
+  /* line 64, sass/partials/_cart-responsive.scss */
+  .woocommerce table.shop_table td.product-thumbnail:before {
+    content: "Image"; }
+
+  /* line 68, sass/partials/_cart-responsive.scss */
+  .woocommerce table.shop_table td.product-name:before {
+    content: "Product"; }
+
+  /* line 72, sass/partials/_cart-responsive.scss */
+  .woocommerce table.shop_table td.product-price:before {
+    content: "Price"; }
+
+  /* line 76, sass/partials/_cart-responsive.scss */
+  .woocommerce table.shop_table td.product-quantity:before {
+    content: "Qty"; }
+
+  /* line 80, sass/partials/_cart-responsive.scss */
+  .woocommerce table.shop_table td.product-subtotal:before {
+    content: "Subtotal"; }
+
+  /* line 84, sass/partials/_cart-responsive.scss */
+  .woocommerce table.shop_table td.product-total:before {
+    content: "Total"; }
+
+  /* line 88, sass/partials/_cart-responsive.scss */
+  .woocommerce .quantity,
+  .woocommerce #content .quantity,
+  .woocommerce .quantity,
+  .woocommerce #content .quantity {
+    margin: 0; }
+
+  /* line 95, sass/partials/_cart-responsive.scss */
+  .woocommerce table.cart td.actions,
+  .woocommerce #content table.cart td.actions {
+    text-align: left;
+    border: 0;
+    padding-left: 6px !important; }
+
+  /* line 102, sass/partials/_cart-responsive.scss */
+  .woocommerce table.cart td.actions .button.alt,
+  .woocommerce #content table.cart td.actions .button.alt {
+    float: left;
+    margin-top: 10px; }
+
+  /* line 108, sass/partials/_cart-responsive.scss */
+  .woocommerce table.cart td.actions div,
+  .woocommerce #content table.cart td.actions div,
+  .woocommerce table.cart td.actions input,
+  .woocommerce #content table.cart td.actions input {
+    margin-bottom: 10px; }
+
+  /* line 115, sass/partials/_cart-responsive.scss */
+  .woocommerce .cart-collaterals .cart_totals {
+    float: left;
+    width: 100%;
+    text-align: left; }
+
+  /* line 121, sass/partials/_cart-responsive.scss */
+  .woocommerce .cart-collaterals .cart_totals th,
+  .woocommerce .cart-collaterals .cart_totals td {
+    border: 0 !important; }
+
+  /* line 126, sass/partials/_cart-responsive.scss */
+  .woocommerce .cart-collaterals .cart_totals table tr.cart-subtotal td,
+  .woocommerce .cart-collaterals .cart_totals table tr.shipping td,
+  .woocommerce .cart-collaterals .cart_totals table tr.total td {
+    padding-left: 6px !important; }
+
+  /* line 132, sass/partials/_cart-responsive.scss */
+  .woocommerce table.shop_table tr.cart-subtotal td,
+  .woocommerce table.shop_table tr.shipping td,
+  .woocommerce table.shop_table tr.total td,
+  .woocommerce table.shop_table.order_details tfoot th,
+  .woocommerce table.shop_table.order_details tfoot td {
+    padding-left: 6px !important;
+    border: 0 !important; }
+
+  /* line 141, sass/partials/_cart-responsive.scss */
+  .woocommerce table.shop_table tbody {
+    padding-top: 10px; }
+
+  /* line 145, sass/partials/_cart-responsive.scss */
+  .woocommerce .col2-set .col-1,
+  .woocommerce .col2-set .col-1,
+  .woocommerce .col2-set .col-2,
+  .woocommerce .col2-set .col-2,
+  .woocommerce form .form-row-first,
+  .woocommerce form .form-row-last,
+  .woocommerce form .form-row-first,
+  .woocommerce form .form-row-last {
+    float: none;
+    width: 100%; }
+
+  /* line 157, sass/partials/_cart-responsive.scss */
+  .woocommerce .order_details ul,
+  .woocommerce .order_details ul,
+  .woocommerce .order_details,
+  .woocommerce .order_details {
+    padding: 0; }
+
+  /* line 164, sass/partials/_cart-responsive.scss */
+  .woocommerce .order_details li,
+  .woocommerce .order_details li {
+    clear: left;
+    margin-bottom: 10px;
+    border: 0; }
+
+  /* make buttons full width, text wide anyway, improves effectiveness */
+  /* line 172, sass/partials/_cart-responsive.scss */
+  #content table.cart td.actions .button,
+  .woocommerce #content table.cart td.actions .input-text,
+  .woocommerce #content table.cart td.actions input,
+  .woocommerce table.cart td.actions .button,
+  .woocommerce table.cart td.actions .input-text,
+  .woocommerce table.cart td.actions input,
+  .woocommerce #content table.cart td.actions .button,
+  .woocommerce #content table.cart td.actions .input-text,
+  .woocommerce #content table.cart td.actions input,
+  .woocommerce table.cart td.actions .button,
+  .woocommerce table.cart td.actions .input-text,
+  .woocommerce table.cart td.actions input {
+    width: 100%; }
+
+  /* keep coupon at 50% */
+  /* line 188, sass/partials/_cart-responsive.scss */
+  #content table.cart td.actions .coupon .button,
+  .woocommerce #content table.cart td.actions .coupon .input-text,
+  .woocommerce #content table.cart td.actions .coupon input,
+  .woocommerce table.cart td.actions .coupon .button,
+  .woocommerce table.cart td.actions .coupon .input-text,
+  .woocommerce table.cart td.actions .coupon input,
+  .woocommerce #content table.cart td.actions .coupon .button,
+  .woocommerce #content table.cart td.actions .coupon .input-text,
+  .woocommerce #content table.cart td.actions .coupon input,
+  .woocommerce table.cart td.actions .coupon .button,
+  .woocommerce table.cart td.actions .coupon .input-text,
+  .woocommerce table.cart td.actions .coupon input {
+    width: 48%; }
+
+  /* clean up how coupon inputs display */
+  /* line 204, sass/partials/_cart-responsive.scss */
+  #content table.cart td.actions .coupon,
+  .woocommerce table.cart td.actions .coupon,
+  .woocommerce #content table.cart td.actions .coupon,
+  .woocommerce table.cart td.actions .coupon {
+    margin-top: 1.5em; }
+
+  /* line 211, sass/partials/_cart-responsive.scss */
+  #content table.cart td.actions .coupon .input-text,
+  .woocommerce table.cart td.actions .coupon .input-text,
+  .woocommerce #content table.cart td.actions .coupon .input-text,
+  .woocommerce table.cart td.actions .coupon .input-text {
+    margin-bottom: 1em; }
+
+  /* remove cross sells, they interfere with flow between cart and cart totals + shipping calculator */
+  /* line 219, sass/partials/_cart-responsive.scss */
+  .woocommerce .cart-collaterals .cross-sells,
+  .woocommerce .cart-collaterals .cross-sells {
+    display: none; } }
+/* END Make the cart table responsive */
 /* Slider */
 /* line 3, bower_components/slick-carousel/slick/slick.scss */
 .slick-slider {
