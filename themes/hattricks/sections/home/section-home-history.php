@@ -1,10 +1,10 @@
 <section id="section-home-history" class="scrollify-section">
   <div class="jumbotron" id="jumbotron-2" data-stellar-background-ratio="0.5">
-    <div class="container">
-      <div class="row">
+    <div class="container center-container">
+<!--      <div class="row">
 
-      </div>
-      <div class="row">
+      </div>-->
+      <div class="row center-row">
         <div class="col-md-6 text-left position-relative">
           <div id="history-content-wrapper">
             <h1 class="font-white font-bevan text-shadow">THE<br> <span class="font-yellow">HISTORY</span><br> OF<br> <span class="font-yellow">HATTRICKS</span></h1>

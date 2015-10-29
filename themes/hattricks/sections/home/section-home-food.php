@@ -1,6 +1,6 @@
 <section id="section-home-food" class="scrollify-section">
   <div class="jumbotron" id="jumbotron-3" data-stellar-background-ratio="0.7">
-    <div class="container text-center">
+    <div class="container center-container text-center">
       <div class="row">
         <div class="col-md-6">
           
