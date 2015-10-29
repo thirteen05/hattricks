@@ -156,15 +156,16 @@ a {
       text-transform: uppercase;
       color: #b7b7b7;
       -webkit-transition: color .5s;
-      transition: color .5s; }
-      /* line 37, sass/partials/_navbar.scss */
+      transition: color .5s;
+      text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7); }
+      /* line 38, sass/partials/_navbar.scss */
       #hattricks-navbar .navbar-nav li a:hover {
         color: #fff; }
-  /* line 43, sass/partials/_navbar.scss */
+  /* line 44, sass/partials/_navbar.scss */
   #hattricks-navbar.navbar-green {
     background-color: rgba(8, 96, 43, 0.7) !important; }
 
-/* line 48, sass/partials/_navbar.scss */
+/* line 49, sass/partials/_navbar.scss */
 #scroll-to-top {
   width: 50px;
   height: 50px;
@@ -175,12 +176,12 @@ a {
   right: 15px;
   display: none; }
 
-/* line 59, sass/partials/_navbar.scss */
+/* line 60, sass/partials/_navbar.scss */
 #scroll-to-top:hover {
   cursor: pointer;
   background-color: rgba(8, 96, 43, 0.9); }
 
-/* line 67, sass/partials/_navbar.scss */
+/* line 68, sass/partials/_navbar.scss */
 #mobile-nav-wrapper {
   height: 100vh;
   width: 200px;
@@ -190,30 +191,30 @@ a {
   left: -200px;
   transition: left .5s;
   padding: 15px; }
-  /* line 77, sass/partials/_navbar.scss */
+  /* line 78, sass/partials/_navbar.scss */
   #mobile-nav-wrapper.mobile-nav-show {
     left: 0px; }
-  /* line 82, sass/partials/_navbar.scss */
+  /* line 83, sass/partials/_navbar.scss */
   #mobile-nav-wrapper #hamburger {
     position: absolute;
     top: 15px;
     right: -35px; }
-    /* line 87, sass/partials/_navbar.scss */
+    /* line 88, sass/partials/_navbar.scss */
     #mobile-nav-wrapper #hamburger :hover {
       cursor: pointer; }
-  /* line 92, sass/partials/_navbar.scss */
+  /* line 93, sass/partials/_navbar.scss */
   #mobile-nav-wrapper #mobile-nav-menu {
     list-style-type: none;
     padding: 0px; }
-    /* line 96, sass/partials/_navbar.scss */
+    /* line 97, sass/partials/_navbar.scss */
     #mobile-nav-wrapper #mobile-nav-menu li {
       font-family: "Bevan", Times New Roman, serif !important;
       text-transform: uppercase;
       font-size: 28px; }
-      /* line 101, sass/partials/_navbar.scss */
+      /* line 102, sass/partials/_navbar.scss */
       #mobile-nav-wrapper #mobile-nav-menu li a {
         transition: all .5s; }
-        /* line 104, sass/partials/_navbar.scss */
+        /* line 105, sass/partials/_navbar.scss */
         #mobile-nav-wrapper #mobile-nav-menu li a:hover {
           color: #FFF; }
 
@@ -320,16 +321,15 @@ a {
   background-image: url(img/test-bg-3.jpg);
   background-size: cover;
   background-attachment: fixed;
-  min-height: 100vh;
-  padding-top: 0px; }
-  /* line 91, sass/partials/_home.scss */
+  min-height: 100vh; }
+  /* line 90, sass/partials/_home.scss */
   #section-home-food .jumbotron .row:first-of-type .col-md-6 {
     height: 100%; }
-    /* line 94, sass/partials/_home.scss */
+    /* line 93, sass/partials/_home.scss */
     #section-home-food .jumbotron .row:first-of-type .col-md-6 #carousel-home-food {
       position: absolute;
       bottom: 0; }
-    /* line 99, sass/partials/_home.scss */
+    /* line 98, sass/partials/_home.scss */
     #section-home-food .jumbotron .row:first-of-type .col-md-6 .carousel-indicators {
       bottom: initial;
       position: relative;
@@ -337,7 +337,7 @@ a {
       text-align: right;
       width: 100%;
       margin-left: 0px; }
-      /* line 107, sass/partials/_home.scss */
+      /* line 106, sass/partials/_home.scss */
       #section-home-food .jumbotron .row:first-of-type .col-md-6 .carousel-indicators li {
         text-indent: 0px;
         width: auto;
@@ -353,34 +353,34 @@ a {
         transition: all .5s;
         border-radius: 0;
         padding-right: 10px; }
-        /* line 123, sass/partials/_home.scss */
+        /* line 122, sass/partials/_home.scss */
         #section-home-food .jumbotron .row:first-of-type .col-md-6 .carousel-indicators li:hover {
-          color: yellow; }
-        /* line 127, sass/partials/_home.scss */
+          color: #f6ee3d; }
+        /* line 126, sass/partials/_home.scss */
         #section-home-food .jumbotron .row:first-of-type .col-md-6 .carousel-indicators li.active {
           width: auto;
           height: auto;
           background-color: transparent;
-          color: yellow;
+          color: #f6ee3d;
           margin: 0px;
-          border-left: 10px solid yellow; }
-  /* line 141, sass/partials/_home.scss */
+          border-left: 10px solid #f6ee3d; }
+  /* line 140, sass/partials/_home.scss */
   #section-home-food .jumbotron .row:nth-of-type(2) {
     background-color: rgba(8, 96, 43, 0.7);
     padding: 20px 15px;
     transform: rotateX(); }
 
-/* line 151, sass/partials/_home.scss */
+/* line 150, sass/partials/_home.scss */
 #section-home-drinks .jumbotron {
   background-image: url(img/test-bg-4.jpg);
   background-size: cover;
   min-height: 100vh;
   padding-top: 0px; }
-  /* line 157, sass/partials/_home.scss */
+  /* line 156, sass/partials/_home.scss */
   #section-home-drinks .jumbotron #home-drinks-beer-img {
     opacity: 0.9; }
 
-/* line 166, sass/partials/_home.scss */
+/* line 165, sass/partials/_home.scss */
 #section-home-thunder .jumbotron {
   background-image: url(img/test-bg-5.jpg);
   background-size: cover;
@@ -388,49 +388,49 @@ a {
   padding-top: 0px; }
 
 @media (min-width: 996px) {
-  /* line 179, sass/partials/_home.scss */
+  /* line 178, sass/partials/_home.scss */
   #section-home-food .jumbotron {
     background-image: url(img/test-bg-3.jpg);
     background-size: cover;
     background-attachment: fixed;
     min-height: 100vh;
     padding-top: 0px; }
-    /* line 186, sass/partials/_home.scss */
+    /* line 185, sass/partials/_home.scss */
     #section-home-food .jumbotron .row:first-of-type {
       height: 480px; }
 
-  /* line 194, sass/partials/_home.scss */
+  /* line 193, sass/partials/_home.scss */
   #section-home-history .jumbotron {
     background-image: url(img/test-bg-2.jpg);
     background-size: cover;
     background-attachment: fixed;
     min-height: 100vh;
     position: relative; }
-    /* line 201, sass/partials/_home.scss */
+    /* line 200, sass/partials/_home.scss */
     #section-home-history .jumbotron .center-container {
       position: absolute;
       top: 50%;
       left: 50%;
       transform: translateX(-50%) translateY(-50%); }
 
-  /* line 214, sass/partials/_home.scss */
+  /* line 213, sass/partials/_home.scss */
   #section-home-food .jumbotron {
     position: relative; }
-    /* line 217, sass/partials/_home.scss */
+    /* line 216, sass/partials/_home.scss */
     #section-home-food .jumbotron .center-container {
       position: absolute;
       top: 50%;
       left: 50%;
       transform: translateX(-50%) translateY(-50%); }
-    /* line 224, sass/partials/_home.scss */
+    /* line 223, sass/partials/_home.scss */
     #section-home-food .jumbotron .carousel-indicators li {
       font-size: 5rem !important;
       line-height: 5rem !important; }
 
-  /* line 234, sass/partials/_home.scss */
+  /* line 233, sass/partials/_home.scss */
   #section-home-drinks .jumbotron {
     position: relative; }
-    /* line 237, sass/partials/_home.scss */
+    /* line 236, sass/partials/_home.scss */
     #section-home-drinks .jumbotron .center-container {
       position: absolute;
       top: 50%;
@@ -611,12 +611,32 @@ a {
 /* Small devices (tablets, 768px and up) */
 /* Medium devices (desktops, 992px and up) */
 /* Large devices (large desktops, 1200px and up) */
-/* line 2, sass/partials/_history.scss */
-#section-history-wrapper .jumbotron {
-  background-image: url(img/test-bg.jpg);
+/* line 1, sass/partials/_history.scss */
+#history-wrapper {
+  background-image: url(img/Hattricks-Across-Street.jpg);
   background-size: cover;
-  background-attachment: fixed;
-  min-height: 100vh; }
+  background-position: center center;
+  min-height: 100vh;
+  background-color: #02180b;
+  background-attachment: fixed; }
+  /* line 11, sass/partials/_history.scss */
+  #history-wrapper #section-history-top .jumbotron {
+    background-color: transparent; }
+    /* line 16, sass/partials/_history.scss */
+    #history-wrapper #section-history-top .jumbotron #history-content-wrapper p {
+      padding: 15px;
+      background-color: rgba(8, 96, 43, 0.7); }
+  /* line 31, sass/partials/_history.scss */
+  #history-wrapper #section-history-timeline #cd-timeline .cd-timeline-block .cd-timeline-content {
+    margin-left: 0; }
+    /* line 34, sass/partials/_history.scss */
+    #history-wrapper #section-history-timeline #cd-timeline .cd-timeline-block .cd-timeline-content h2 {
+      margin-top: 45px; }
+    /* line 38, sass/partials/_history.scss */
+    #history-wrapper #section-history-timeline #cd-timeline .cd-timeline-block .cd-timeline-content p {
+      padding: 15px;
+      background-color: rgba(8, 96, 43, 0.7);
+      font-size: 1.5rem; }
 
 /* line 3, sass/partials/_timeline.scss */
 .cd-timeline-content h2 {

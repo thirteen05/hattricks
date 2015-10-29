@@ -187,7 +187,7 @@
           
         </script>
 
-          <?php if(is_home()): ?>
+        <?php if(is_home()): ?>
 
             <script>
               
@@ -197,9 +197,10 @@
                       scrollbars: true
                   });
               });
+              
             </script>
-          
-          <?php endif; ?>
+
+        <?php endif; ?>
       
       
     </body>

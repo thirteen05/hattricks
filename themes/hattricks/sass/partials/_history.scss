@@ -1,9 +1,49 @@
-#section-history-wrapper{
-  .jumbotron{
-    background-image: url(img/test-bg.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-    min-height: 100vh;
+#history-wrapper{
+  background-image: url(img/Hattricks-Across-Street.jpg);
+  background-size: cover;
+  background-position: center center;
+  min-height: 100vh;
+  background-color: $dark-green;
+  background-attachment: fixed;
+  
+  #section-history-top{
     
+    .jumbotron{
+      background-color: transparent;
+
+      #history-content-wrapper{
+
+        p{
+          padding: 15px;
+          background-color: $green-glass;
+
+        }
+      }
+    }
+  }
+  
+  #section-history-timeline{
+    
+    #cd-timeline{
+      
+      .cd-timeline-block{
+        
+        .cd-timeline-content{
+          margin-left: 0;
+          
+          h2{
+            margin-top: 45px;
+          }
+          
+          p{
+            padding: 15px;
+            background-color: $green-glass;
+            font-size: 1.5rem;
+          }
+          
+          
+        }
+      }
+    }
   }
 }

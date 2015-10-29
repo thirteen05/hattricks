@@ -84,7 +84,6 @@
     background-size: cover;
     background-attachment: fixed;
     min-height: 100vh;
-    padding-top: 0px;
     
     .row:first-of-type{
       
@@ -121,16 +120,16 @@
             padding-right: 10px;
             
             &:hover{
-              color: yellow;
+              color: $yellow;
             }
             
             &.active{
               width: auto;
               height: auto;
               background-color: transparent;
-              color: yellow;
+              color: $yellow;
               margin: 0px;
-              border-left: 10px solid yellow;
+              border-left: 10px solid $yellow;
             }
           }
         }
