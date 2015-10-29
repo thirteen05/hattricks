@@ -1,4 +1,4 @@
-<section id="section-home-history">
+<section id="section-home-history" class="scrollify-section">
   <div class="jumbotron" id="jumbotron-2" data-stellar-background-ratio="0.5">
     <div class="container">
       <div class="row">
@@ -27,7 +27,7 @@ The sports memorabilia lined walls provide you with a comfortable atmosphere to 
             <div class="row no-margin">
               <div class="col-md-12" id="home-testimonial-wrapper">
                 <h3 class="font-bevan font-yellow"><i class="fa fa-quote-right fa-2x font-white"></i> Testimonials</h3>
-                <div class="your-class">
+                <div class="testimonial-slider">
                   <div>
                     <p class="font-white">
                       "Leberkas picanha ribeye, t-bone boudin porchetta spare ribs swine ball tip shank sirloin hamburger filet mignon pancetta. Fatback alcatra landjaeger, meatball short loin shank chicken rump brisket tail pork loin."

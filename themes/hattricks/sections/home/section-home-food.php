@@ -1,4 +1,4 @@
-<section id="section-home-food">
+<section id="section-home-food" class="scrollify-section">
   <div class="jumbotron" id="jumbotron-3" data-stellar-background-ratio="0.7">
     <div class="container text-center">
       <div class="row">

@@ -1,4 +1,4 @@
-<section id="section-home-thunder">
+<section id="section-home-thunder" class="scrollify-section">
   <div class="jumbotron" id="jumbotron-5" data-stellar-background-ratio="0.5">
     <div class="container text-center">
       <div class="row">

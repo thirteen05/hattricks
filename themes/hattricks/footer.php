@@ -9,9 +9,11 @@
         <script src="<?php echo get_stylesheet_directory_uri();?>/js/vertical-timeline/js/main.js"></script>
         <script src="<?php echo get_stylesheet_directory_uri();?>/js/thirteen05.js"></script>
         <script src="<?php echo get_stylesheet_directory_uri();?>/bower_components/jquery.scrollTo/jquery.scrollTo.min.js"></script>
+        <script src="<?php echo get_stylesheet_directory_uri();?>/bower_components/Scrollify/jquery.scrollify.min.js"></script>
         <script src="<?php echo get_stylesheet_directory_uri();?>/bower_components/jquery.stellar/src/jquery.stellar.js"></script>
         <script src="<?php echo get_stylesheet_directory_uri();?>/bower_components/jquery-selectric/public/jquery.selectric.min.js"></script>
         <script src="<?php echo get_stylesheet_directory_uri();?>/bower_components/slick-carousel/slick/slick.min.js"></script>
+        <script src="<?php echo get_stylesheet_directory_uri();?>/bower_components/Scrollify/jquery.scrollify.min.js"></script>
         <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
         <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/ScrollToPlugin.min.js"></script>
 
@@ -19,9 +21,10 @@
 
         <script>
           
-          //Fade in site when loaded
+          //When loaded
           
           $(window).load(function(){
+            
             $('body').addClass('show');
             setTimeout($('#home-jumbo-content-wrapper').fadeIn(1000), 1000);
             
@@ -59,6 +62,8 @@
             $('#section-food-pregame').fadeToggle();
           });
           
+          //Display overlay for Staff on hover
+          
           
           $('.staff-member-pic-wrapper').hover(function(){
             
@@ -70,6 +75,7 @@
             
           });
           
+          //Make Images on Food Page fade in from bottom when displayed on the screen          
           
           
           /* Every time the window is scrolled ... */
@@ -100,7 +106,7 @@
 
               var $window = $(window);
               var scrollTime = 1.5;
-              var scrollDistance = 500;
+              var scrollDistance = 300;
 
               $window.on("mousewheel DOMMouseScroll", function(event){
 
@@ -119,15 +125,21 @@
               });
           });
           
+          //Display drawer menu when Hamburger Icon is clicked
+          
           $('#hamburger').click(function(){
             $('#mobile-nav-wrapper').toggleClass('mobile-nav-show');
           });
           
-          $('.your-class').slick({
+          //Slick slider for Testimonials on Home Page
+          
+          $('.testimonial-slider').slick({
             dots: false,
             speed: 500,
             appendArrows: '#home-testimonial-arrow-wrapper'
           });
+          
+          //Food Slider on Home Page with Words as Indicators
           
           $(document).ready(function() {
             $("#carousel-home-food").on("slid", function() {
@@ -173,8 +185,21 @@
              handled=true; //set global variable to true to identify whether indicator changing was handled or not.
           });
           
-          
         </script>
+
+          <?php if(is_home()): ?>
+
+            <script>
+              
+               $(function() {
+                  $.scrollify({
+                      section : ".scrollify-section",
+                      scrollbars: true
+                  });
+              });
+            </script>
+          
+          <?php endif; ?>
       
       
     </body>

@@ -1,4 +1,4 @@
-<section id="section-home-drinks">
+<section id="section-home-drinks" class="scrollify-section">
   <div class="jumbotron section" id="jumbotron-4">
     <div class="container text-center">
       <div class="row">

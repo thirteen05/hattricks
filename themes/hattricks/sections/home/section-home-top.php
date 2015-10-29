@@ -1,4 +1,4 @@
-<section id="section-home-top">
+<section id="section-home-top" class="scrollify-section">
 <div class="jumbotron" id="jumbotron-1" data-stellar-background-ratio="0.7">
   <div class="container-fluid">
     <div class="row">

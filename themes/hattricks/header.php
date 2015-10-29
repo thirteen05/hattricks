@@ -10,6 +10,7 @@
       
         <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri();?>/bower_components/font-awesome/css/font-awesome.min.css">
         <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri();?>/bower_components/jquery-selectric/public/themes/modern/selectric.css">
+        <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri();?>/bower_components/slick-carousel/slick/slick-theme.scss">
         <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri();?>/css/bootstrap.min.css">
         <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri();?>/css/main.css">
         <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri();?>/js/vertical-timeline/css/style.css"> <!-- Resource style -->
@@ -42,6 +43,7 @@
         <?php endif; ?>
       
     </head>
+  
     <body data-spy="scroll" data-target="#trigger-wrapper">
       
       <?php if(is_home()): ?>
