@@ -34,6 +34,9 @@
 
     #hattricks-logo{
       display: inline-block;
+      -webkit-filter: drop-shadow(2px 2px 3px rgba(0,0,0,0.6));
+      filter: drop-shadow(2px 2px 3px rgba(0,0,0,0.6));
+      
     }
   }
 }
@@ -155,6 +158,44 @@
     
     #home-drinks-beer-img{
       opacity: 0.9;
+    }
+    
+    .col-md-6:first-of-type{
+      
+      img{
+        margin-bottom: 15px;
+      }
+      
+    }
+    
+    .col-md-6:nth-of-type(2){
+      
+      img{
+         -webkit-filter: drop-shadow(2px 2px 3px rgba(0,0,0,0.9));
+          filter: drop-shadow(2px 2px 3px rgba(0,0,0,0.9));
+      }
+      
+      #home-local-beers{
+        font-size: 40px;
+        position: absolute;
+        bottom: 60%;
+        left: 50%;
+        transform: translateX(-50%) translateY(50%);
+        
+        #local,#on-tap{
+          font-size: 44px;
+          margin: 0;
+        }
+        
+        #beers{
+          font-size: 80px;
+          border-top: 6px double white;
+          border-bottom: 6px double white;
+          margin: 10px 0;
+          padding-top: 5px;
+        }
+      }
+      
     }
     
   }

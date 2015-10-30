@@ -3,6 +3,8 @@ var thirteen05 = (function(){
   return {
     
     setAnchors: function(){
+      
+      //Home Page
         
         $('#custom-trigger-home-history, #begin-powerplay-wrapper').click(function(e){
           e.preventDefault();
@@ -31,6 +33,38 @@ var thirteen05 = (function(){
         $('#scroll-to-top, #custom-trigger-home-top').click(function(e){
           e.preventDefault();
           $(window).scrollTo('html', 1000);
+        });
+      
+      //Food Page
+      
+        $('#custom-trigger-food-pregame').click(function(e){
+          e.preventDefault();
+          $(window).scrollTo('#section-food-pregame-images', 1000);
+
+        });
+
+        $('#custom-trigger-food-first').click(function(e){
+          e.preventDefault();
+          $(window).scrollTo('#section-food-first-images', 1000);
+
+        });
+
+        $('#custom-trigger-food-second').click(function(e){
+          e.preventDefault();
+          $(window).scrollTo('#section-food-second-images', 1000);
+
+        });
+
+        $('#custom-trigger-food-third').click(function(e){
+          e.preventDefault();
+          $(window).scrollTo('#section-food-third-images', 1000);
+          
+        });
+          
+        $('#custom-trigger-food-assists').click(function(e){
+          e.preventDefault();
+          $(window).scrollTo('#section-food-assists', 1000);
+
         });
     },
     navbarFade: function(navbarId, navbarFinalClass){

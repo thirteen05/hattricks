@@ -1,4 +1,4 @@
-#trigger-wrapper{
+#trigger-wrapper-home{
   text-align: center;
   
   .custom-trigger-list{
@@ -39,6 +39,50 @@
         border-color: yellow;
         width: 20px;
         height: 20px;
+      }
+    }
+  }
+}
+
+#trigger-wrapper-food{
+  text-align: right;
+  
+  .custom-trigger-list{
+    list-style-type: none;
+    padding-left: 0px;
+    position: fixed;
+    left: 15px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    z-index: 100;
+    
+    .custom-trigger{
+      border-radius: 100%;
+      -webkit-transition: all .3s ease-in;
+      transition: all .2s;
+      opacity: 0.7;
+      
+      a{
+        height: 100%;
+        width: 100%;
+        font-size: 2rem;
+        padding: 0;
+        
+        &:hover,
+        &:active,
+        &:focus{
+          background-color: transparent;
+          color: #FFF;
+        }
+      }
+      
+      &.active,
+      &:hover{
+        a{
+          color: #FFF!important;
+        }
       }
     }
   }

@@ -4,6 +4,11 @@
   background-size: cover;
   min-height: 100vh;
   
+  .shamrock{
+    -webkit-filter: drop-shadow(2px 2px 3px rgba(0,0,0,0.9));
+    filter: drop-shadow(2px 2px 3px rgba(0,0,0,0.9));
+  }
+  
   .food-circle-image{
     margin: 0 15px;
   }

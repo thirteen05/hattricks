@@ -40,9 +40,9 @@
           
           <h3 class="font-white font-bevan no-margin text-shadow">Tampa's Perfect PowerPlay:</h3>
           <ol class="carousel-indicators">
-            <li data-target="#carousel-home-food" data-slide-to="0" class="active">Great Wings.</li>
-            <li data-target="#carousel-home-food" data-slide-to="1">Great Burgers.</li>
-            <li data-target="#carousel-home-food" data-slide-to="2">Great Times.</li>
+            <li data-target="#carousel-home-food" data-slide-to="0" class="active text-shadow">Great Wings.</li>
+            <li data-target="#carousel-home-food" class="text-shadow" data-slide-to="1">Great Burgers.</li>
+            <li data-target="#carousel-home-food" class="text-shadow" data-slide-to="2">Great Times.</li>
           </ol>
 
           <hr>

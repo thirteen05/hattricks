@@ -5,7 +5,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12 text-center">
-          <img width="150" src="<?php echo get_stylesheet_directory_uri();?>/img/Hattricks-Shamrock-Icon.svg"/>
+          <img class="shamrock" width="150" src="<?php echo get_stylesheet_directory_uri();?>/img/Hattricks-Shamrock-Icon.svg"/>
           <h1 class="font-bevan font-white text-shadow no-margin">Our Food</h1>
         </div>
       </div>
@@ -23,6 +23,7 @@
     <?php get_template_part('sections/food/section-food-second-images'); ?>
     <?php get_template_part('partials/shamrock-divider'); ?>
     <?php get_template_part('sections/food/section-food-second'); ?>
+    <?php get_template_part('sections/food/section-food-third-images'); ?>
     <?php get_template_part('partials/shamrock-divider'); ?>
     <?php get_template_part('sections/food/section-food-third'); ?>
     <?php get_template_part('partials/shamrock-divider'); ?>

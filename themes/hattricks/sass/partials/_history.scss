@@ -28,8 +28,23 @@
       
       .cd-timeline-block{
         
+        .cd-timeline-img{
+              i{
+                font-size: 20px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translateX(-65%) translateY(-50%);
+              }
+          }
+        
         .cd-timeline-content{
           margin-left: 0;
+          
+          .cd-date{
+            font-size: 36px;
+            margin: 0;
+          }
           
           h2{
             margin-top: 45px;
@@ -40,8 +55,24 @@
             background-color: $green-glass;
             font-size: 1.5rem;
           }
-          
-          
+            
+        }
+      }
+    }
+  }
+}
+
+@media(min-width: 996px){
+  
+  #history-wrapper{
+    #section-history-timeline{
+      #cd-timeline{
+        .cd-timeline-block{
+          .cd-timeline-img{
+            i{
+              font-size: 36px;
+            }
+          }
         }
       }
     }

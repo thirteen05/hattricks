@@ -17,8 +17,6 @@
         <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
         <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/ScrollToPlugin.min.js"></script>
 
-
-
         <script>
           
           //When loaded
@@ -33,7 +31,6 @@
           //Fade Navbar on scroll down
           
           thirteen05.navbarFade('#hattricks-navbar','navbar-green');
-          
           
           //Sets anchosr for home page
           

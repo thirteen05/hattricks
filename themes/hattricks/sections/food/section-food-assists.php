@@ -1,4 +1,4 @@
-<section id="section-food-third">
+<section id="section-food-assists">
   <div class="container-fluid">
     <div class="row">
       <div class="col-md-12 text-center">

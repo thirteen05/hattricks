@@ -43,22 +43,34 @@
         <?php endif; ?>
       
     </head>
+    
+    <?php 
+    
+      $trigger = '';
+      
+      if(is_home()):
+        $trigger = '#trigger-wrapper-home';
+      elseif(is_page('Food')):
+        $trigger = '#trigger-wrapper-food';
+      endif;
   
-    <body data-spy="scroll" data-target="#trigger-wrapper">
+    ?>
+  
+    <body data-spy="scroll" data-target="<?php echo $trigger ?>">
       
-      <?php if(is_home()): ?>
+      <?php 
       
-      <div class="hidden-xs" id="trigger-wrapper">
-        <ul class="custom-trigger-list nav">
-          <li class="custom-trigger" id="custom-trigger-home-top"><a href="#jumbotron-1"></a></li>
-          <li class="custom-trigger" id="custom-trigger-home-history"><a href="#jumbotron-2"></a></li>
-          <li class="custom-trigger" id="custom-trigger-home-food"><a href="#jumbotron-3"></a></li>
-          <li class="custom-trigger" id="custom-trigger-home-drinks"><a href="#jumbotron-4"></a></li>
-          <li class="custom-trigger" id="custom-trigger-home-thunder"><a href="#jumbotron-5"></a></li>
-        </ul>
-      </div>
+        if(is_home()):
       
-      <?php endif; ?>
+          get_template_part('partials/triggers-home');
+      
+        elseif(is_page('Food')):
+      
+          get_template_part('partials/triggers-food');
+        
+        endif; 
+      
+      ?>
       
       <?php get_template_part('navbar'); ?>
       <?php get_template_part('navbar-mobile'); ?>
