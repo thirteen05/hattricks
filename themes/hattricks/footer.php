@@ -188,12 +188,16 @@
 
             <script>
               
-               $(function() {
-                  $.scrollify({
-                      section : ".scrollify-section",
-                      scrollbars: true
-                  });
-              });
+              if($(window).innerWidth() > 768){
+                
+                $(function() {
+                    $.scrollify({
+                        section : ".scrollify-section",
+                        scrollbars: true
+                    });
+                });
+                
+              }
               
             </script>
 

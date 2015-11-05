@@ -16,6 +16,8 @@ Use it to make something cool, have fun, and share what you've learned with othe
 @import "compass";
 //@import "compass/reset";
 
+
+@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
 @import "partials/fonts";
 @import "partials/globals";
 @import "partials/navbar";
@@ -27,6 +29,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 @import "partials/history";
 @import "partials/timeline";
 @import "partials/woo";
+@import "partials/admin";
 @import "partials/cart-responsive";
 @import "../bower_components/slick-carousel/slick/slick";
 @import "../bower_components/slick-carousel/slick/slick-theme";

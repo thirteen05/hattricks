@@ -7,6 +7,13 @@ html{
   background-color: #02180b;
   font-family: 'Montserrat', Helvetica, Arial, sans-serif;
   height: 100vh;
+
+  &.html-brick-bg{
+    background-image: url(img/Brick-Background-Hattricks.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100%;
+  }
 }
 
 body{
@@ -14,6 +21,7 @@ body{
   -webkit-transition: opacity .5s;
   transition: opacity .5s;
   font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+  background-color: transparent;
 }
 
 .no-margin{

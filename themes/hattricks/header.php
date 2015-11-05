@@ -1,5 +1,16 @@
 <!doctype html>
-<html class="no-js" lang="">
+
+<?php 
+
+  if( is_page('Food') || is_page('Drinks') ):
+     $html_class = 'html-brick-bg';
+  endif;
+
+?>
+
+
+
+<html class="no-js <?php echo $html_class; ?>" lang="">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -11,7 +22,6 @@
         <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri();?>/bower_components/font-awesome/css/font-awesome.min.css">
         <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri();?>/bower_components/jquery-selectric/public/themes/modern/selectric.css">
         <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri();?>/bower_components/slick-carousel/slick/slick-theme.scss">
-        <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri();?>/css/bootstrap.min.css">
         <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri();?>/css/main.css">
         <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri();?>/js/vertical-timeline/css/style.css"> <!-- Resource style -->
         <link rel="stylesheet" href="<?php echo get_stylesheet_uri();?>"> 
